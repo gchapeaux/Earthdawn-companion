@@ -1,6 +1,5 @@
 {
-  "source": "K. Scott's Earthdawn 4E character creation sheet v0.3 (Racial Averages and Starting Attributes)",
-  "notes": "Ability names are short labels from the sheet; full rules text to be added from the Player's Guide Races chapter. Labels 'Strong Back', 'Increased Wound Threshold', 'Natural Armor', 'Increased Physical Defense' are descriptive placeholders.",
+  "source": "Earthdawn 4e Player's Guide - Races chapter, and K. Scott's Earthdawn 4E character creation sheet v0.3 (averages)",
   "races": [
     {
       "id": "dwarf",
@@ -11,11 +10,18 @@
       "weight": 120,
       "abilities": [
         {
-          "name": "Heat Sight"
+          "name": "Heat Sight",
+          "text": "Characters with Heat Sight can see heat radiated by another character or object, which translates into different colors. The colors depend on the relative heat given out by an object. The hottest objects show up as white, with the spectrum dropping through red, orange, yellow, green, blue, and down into violet or even black for the coldest objects.\nHeat Sight tends to fade into the background the more light is present, but it allows the character to see in the dark, at the expense of detail.\nMagical effects that limit normal sight, for example magical darkness, also affect Heat Sight, and Heat Sight does not penetrate objects."
         },
         {
           "name": "Strong Back",
-          "text": "+2 STR for carrying"
+          "text": "Dwarf characters have a +2 bonus to their Strength for the purposes of determining carrying capacity.",
+          "effects": [
+            {
+              "stat": "carryingCapacityStrength",
+              "bonus": 2
+            }
+          ]
         }
       ],
       "movement": {
@@ -29,7 +35,8 @@
         "PER": 11,
         "WIL": 11,
         "CHA": 10
-      }
+      },
+      "page": 43
     },
     {
       "id": "elf",
@@ -40,7 +47,8 @@
       "weight": 150,
       "abilities": [
         {
-          "name": "Low-Light Vision"
+          "name": "Low-Light Vision",
+          "text": "Low-Light Vision allows a character to see at much lower light levels than humans. For a character with Low-Light Vision, a single torch easily illuminates a 30-yard by 30-yard meeting hall.\nStarlight provides plenty of light on a clear night, and even on a night shrouded by thick cloud cover the character can see as well as a human sees at dusk. Characters with Low-Light Vision are no more susceptible to flash-blindness than humans. Complete darkness—the complete absence of light—will render a character with Low-Light Vision unable to see, like other characters requiring normal vision."
         }
       ],
       "movement": {
@@ -54,7 +62,8 @@
         "PER": 11,
         "WIL": 11,
         "CHA": 11
-      }
+      },
+      "page": 45
     },
     {
       "id": "human",
@@ -66,6 +75,7 @@
       "abilities": [
         {
           "name": "Versatility",
+          "text": "Human adepts have a special racial talent available to them from First Circle: Versatility. This talent allows them to learn talents from Disciplines other than their own (see the Talents chapter, p. 118, for a full description).\nHuman adepts starting play with no Ranks assigned to their Versatility talent know it at Rank 0. They may purchase ranks for it during the game using Legend Points, just like other talents, treating it as a Novice talent. Non-adept humans cannot learn the Versatility talent.",
           "talentRef": "versatility"
         }
       ],
@@ -80,7 +90,8 @@
         "PER": 10,
         "WIL": 10,
         "CHA": 10
-      }
+      },
+      "page": 46
     },
     {
       "id": "obsidiman",
@@ -92,14 +103,23 @@
       "abilities": [
         {
           "name": "Increased Wound Threshold",
-          "text": "+3 Wound Threshold"
+          "text": "Add +3 to the Wound Threshold of obsidimen to represent this race's inherent resistance to damage because of their stone-like skin.",
+          "effects": [
+            {
+              "stat": "woundThreshold",
+              "bonus": 3
+            }
+          ]
         },
         {
           "name": "Natural Armor",
-          "text": "+3 Physical Armor"
-        },
-        {
-          "name": "Living Armor"
+          "text": "Obsidimen have very tough skin, which serves them as armor. Obsidiman skin has a Physical Armor Rating of 3. However, obsidimen can only wear other types of living armor, which add their protection to the character's Natural Armor. (See Armor and Shields, p.411; types of armor considered \"living\" are indicated as such in the armor's description.)",
+          "effects": [
+            {
+              "stat": "physicalArmor",
+              "bonus": 3
+            }
+          ]
         }
       ],
       "movement": {
@@ -113,7 +133,8 @@
         "PER": 9,
         "WIL": 10,
         "CHA": 9
-      }
+      },
+      "page": 47
     },
     {
       "id": "ork",
@@ -124,10 +145,12 @@
       "weight": 225,
       "abilities": [
         {
-          "name": "Low-Light Vision"
+          "name": "Gahad",
+          "text": "Gahad is largely a roleplaying concept, best described as a physical sensation similar to intense heartburn.\nIt is triggered by certain circumstances or situations, causing orks to feel a drive to eradicate the situation triggering the gahad or take revenge on the perpetrator. Each ork experiences gahad in response to unique circumstances or stimuli, and different orks feel this impulse to greater or lesser degrees. For groups that want to use some game rules to enforce gahad, they should describe a couple of impulses that always trigger gahad, using short sentences.\nFor example, a player might specify that \"Grisalk's gahad is triggered when his mother is insulted.\" The player may specify limits or exceptions for these triggers, for example that \"Grisalk's gahad is triggered when his mother is insulted, except by someone in the family.\"\nWhen his gahad is triggered, the player may choose to have his character give in to it or try to resist the impulse. To resist gahad, the character has to succeed at a Willpower (6) Test, requiring a success level based on how severe the trigger is. In the above example, an ambiguous comment about Grisalk's mother may only require a single success, while an obvious and vicious obscenity could require three (or more) successes.\nSuccessfully resisting, or \"swallowing\", gahad causes a gahad hangover. The hangover begins within an hour of swallowing gahad and lasts for one hour per success required on the original Willpower Test. The hangover manifests as localized pains and cramps, headaches, and in extreme cases, hallucinations about the object of the trigger. While it lasts, the character is considered Harried (p.388).\nWhen giving in to gahad (or if the attempt to resist it fails), the character is driven to end the stimuli that triggered gahad, or take revenge on a character that caused it. In the above example, Grisalk would react violently towards the person who insulted his mother or, if the insult consisted of an obscene picture drawn on a wall, he would destroy the picture. This drive lasts for as long as the hangover would have lasted, regardless of whether or not a resistance test was attempted. The character gets a +1 bonus to any Action or Effect test made towards ending the stimulus or taking revenge, for example to attack the insulting party or tear down the wall.\nGahad is not intended to be a game mechanic giving orks a test bonus on every flimsy excuse. The use and application of gahad, and the bonuses or penalties it confers, are always at the discretion of the gamemaster. In addition, violent reactions, while common, are not a requirement to a triggered gahad—any kind of forceful, decisive action could satisfy the urge to act."
         },
         {
-          "name": "Gahad"
+          "name": "Low-Light Vision",
+          "text": "Like elves, ork characters have the racial Low-Light Vision ability (see p.46)."
         }
       ],
       "movement": {
@@ -141,7 +164,8 @@
         "PER": 10,
         "WIL": 8,
         "CHA": 9
-      }
+      },
+      "page": 48
     },
     {
       "id": "troll",
@@ -152,7 +176,8 @@
       "weight": 500,
       "abilities": [
         {
-          "name": "Heat Sight"
+          "name": "Heat Sight",
+          "text": "Like dwarfs, troll characters have the racial Heat Sight ability (see p.45)."
         }
       ],
       "movement": {
@@ -166,7 +191,8 @@
         "PER": 9,
         "WIL": 11,
         "CHA": 10
-      }
+      },
+      "page": 50
     },
     {
       "id": "tskrang",
@@ -177,7 +203,8 @@
       "weight": 200,
       "abilities": [
         {
-          "name": "Tail Combat"
+          "name": "Tail Combat",
+          "text": "T'skrang often make use of their tails when engaged in combat. A t'skrang can use his tail to whip at opponents in unarmed combat much like striking with an arm or kicking with a leg, using an appropriate unarmed combat talent or skill for any Attack tests. The Damage Step used is the character's Strength Step, unless modified by abilities that enhance unarmed combat Damage. A t'skrang may also attach a melee weapon of up to Size 2 to his tail, and this is treated as an Attached Weapon (see p.406). Tail Combat allows t'skrang to use the Tail Attack Combat Option (see p.386)."
         }
       ],
       "movement": {
@@ -191,7 +218,8 @@
         "PER": 10,
         "WIL": 10,
         "CHA": 11
-      }
+      },
+      "page": 52
     },
     {
       "id": "windling",
@@ -203,14 +231,22 @@
       "abilities": [
         {
           "name": "Astral Sight",
+          "text": "All windlings have access to the Astral Sight Talent (see p.129). Windling adepts starting play with no Ranks assigned to their Astral Sight talent know it at Rank 0. They may purchase Ranks for the talent during the game using Legend Points, just like other talents, treating it as a Novice talent.",
           "talentRef": "astral-sight"
         },
         {
-          "name": "Increased Physical Defense",
-          "text": "+2 Physical Defense"
+          "name": "Flight",
+          "text": "Windlings can fly, but it is not their primary method of movement. Flying tires them quickly and windlings usually limit their flights to short periods of around fifteen to twenty minutes. When flying for extended periods of time, a windling may suffer Strain. After 20 minutes in flight a windling must make a Toughness (5) test. Failure means the character takes 1 Strain. Each five-minute period spent flying beyond the additional twenty minutes requires an additional Toughness test with a cumulative +2 modifier.\nBrief interruptions do not reset the time spent flying, it reduces it on a one-to-one basis: a windling who has spent twenty minutes in flight and then rests five minutes can only fly for five more minutes before having to make Toughness Tests again.\nThough windling wings are durable, they become heavy and fragile when wet, severely impairing the windling's ability to fly. When soaked with water, like falling into a stream or in heavy rain, their flight duration is reduced from twenty minutes to five, and the Difficulty Number of the Toughness tests increases by +2 every minute, instead of every five. When flying with wet wings, the windling is considered Harried (see p.388). Windling wings dry within ten minutes of being in a dry place, or within five minutes of being in a warm place, such as in front of a fire."
         },
         {
-          "name": "Flight"
+          "name": "Increased Physical Defense",
+          "text": "The natural mobility of windlings, combined with their small size, adds +2 to their Physical Defense.",
+          "effects": [
+            {
+              "stat": "physicalDefense",
+              "bonus": 2
+            }
+          ]
         }
       ],
       "movement": {
@@ -225,7 +261,8 @@
         "PER": 11,
         "WIL": 10,
         "CHA": 12
-      }
+      },
+      "page": 53
     }
   ]
 }

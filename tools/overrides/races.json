@@ -1,0 +1,13 @@
+{
+  "_comment": "Racial ability texts the OCR garbled (illustrations, the summary table at the end of the chapter).",
+  "human": {
+    "abilities": {
+      "Versatility": "Human adepts have a special racial talent available to them from First Circle: Versatility. This talent allows them to learn talents from Disciplines other than their own (see the Talents chapter, p. 118, for a full description).\nHuman adepts starting play with no Ranks assigned to their Versatility talent know it at Rank 0. They may purchase ranks for it during the game using Legend Points, just like other talents, treating it as a Novice talent. Non-adept humans cannot learn the Versatility talent."
+    }
+  },
+  "windling": {
+    "abilities": {
+      "Increased Physical Defense": "The natural mobility of windlings, combined with their small size, adds +2 to their Physical Defense."
+    }
+  }
+}

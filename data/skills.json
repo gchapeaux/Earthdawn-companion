@@ -1,0 +1,826 @@
+{
+  "source": "Earthdawn 4e Player's Guide - Skills chapter",
+  "defaultSkills": [
+    "animal-handling",
+    "avoid-blow",
+    "awareness",
+    "bribery",
+    "climbing",
+    "conversation",
+    "distract",
+    "etiquette",
+    "flirting",
+    "haggle",
+    "melee-weapons",
+    "missile-weapons",
+    "research",
+    "resist-taunt",
+    "seduction",
+    "slough-blame",
+    "swimming",
+    "throwing-weapons",
+    "tracking",
+    "unarmed-combat",
+    "wilderness-survival"
+  ],
+  "talentsAsSkills": {
+    "Novice": [
+      "Acrobatic Defense",
+      "Air Sailing",
+      "Animal Bond",
+      "Animal Training",
+      "Anticipate Blow",
+      "Arcane Mutterings",
+      "Avoid Blow",
+      "Awareness",
+      "Battle Shout",
+      "Charge",
+      "Climbing",
+      "Conversation",
+      "Danger Sense",
+      "Diplomacy",
+      "Disarm Trap",
+      "Distract",
+      "Emotion Song",
+      "Engaging Banter",
+      "Etiquette",
+      "First Impression",
+      "Graceful Exit",
+      "Great Leap",
+      "Haggle",
+      "Heartening Laugh",
+      "Lock Picking",
+      "Maneuver",
+      "Melee Weapons",
+      "Mimic Voice",
+      "Missile Weapons",
+      "Navigation",
+      "Picking Pockets",
+      "Research",
+      "Shield Bash",
+      "Stealthy Stride",
+      "Sure Mount",
+      "Surprise Strike",
+      "Swift Kick",
+      "Taunt",
+      "Throwing Weapons",
+      "Tracking",
+      "Trick Riding",
+      "Unarmed Combat",
+      "Wilderness Survival",
+      "Wound Balance"
+    ],
+    "Journeyman": [
+      "Battle Bellow",
+      "Blade Juggle",
+      "Conceal Object",
+      "Disarm",
+      "Down Strike",
+      "Evidence Analysis",
+      "Fast Hand",
+      "Hypnotize",
+      "Impressive Display",
+      "Leadership",
+      "Mount Attack",
+      "Resist Taunt",
+      "Riposte",
+      "Second Attack",
+      "Second Shot",
+      "Second Weapon",
+      "Slough Blame",
+      "Tactics",
+      "Wheeling Attack",
+      "Wheeling Defense"
+    ]
+  },
+  "skills": [
+    {
+      "id": "acting",
+      "name": "Acting",
+      "step": {
+        "attribute": "CHA",
+        "bonus": 0
+      },
+      "action": "Sustained",
+      "actionNote": null,
+      "strain": 0,
+      "strainNote": null,
+      "page": 191,
+      "description": [
+        "The character acts or otherwise pretends that he is someone else. Actors can portray emotions they do not feel, persuading listeners and watchers that the emotions are genuine. Though the Acting skill does not allow a character to physically alter his appearance, the character can mimic voice and speech patterns, copy gestures and movements, and convey energy, attitudes, and mannerisms appropriate to his role.",
+        "The character makes an Acting test against the target's Social Defense. If successful, the target believes the character to be the type of person he is portraying. If the character pretends to be a specific person whom the target knows, the character needs at least three successes to convince the target of his authenticity.",
+        "When using this skill during a theatrical performance, the character makes an Acting test and compares the result against the Social Defense of each member of the audience; for large audiences, the gamemaster may choose to use the average Social Defense of the audience. The Success Level determines how much each audience member enjoys the performance.",
+        "This skill can be used as an Artisan skill."
+      ],
+      "cost": "Novice",
+      "skillType": "General",
+      "usableAsArtisan": true,
+      "default": false
+    },
+    {
+      "id": "alchemy",
+      "name": "Alchemy",
+      "step": {
+        "attribute": "PER",
+        "bonus": 0
+      },
+      "action": "Sustained",
+      "actionNote": null,
+      "strain": 0,
+      "strainNote": null,
+      "page": 191,
+      "description": [
+        "This skill requires an alchemist's kit or access to an alchemist's shop. The Alchemy skill includes an understanding of the magical principles and formulas used to create magical concoctions, the knowledge needed to gather ingredients, and the ability to test and analyze different potions a character might discover in the course of adventuring.",
+        "## Gathering Ingredients",
+        "Creating most alchemical concoctions requires natural herbs, roots, leaves, minerals and animal parts. Characters may purchase ingredients from herbalists or other alchemists, or may gather them himself. This usually requires a day of work. At the gamemaster's discretion, some concoctions may require exotic ingredients that characters must travel far and wide to find. Once a character has gathered the necessary ingredients, he may begin combining them.",
+        "## Creating Potions and Salves",
+        "Creating an alchemical recipe takes a day's work. The character makes an Alchemy test against the appropriate Difficulty Number. If successful, the potion is finished and immediately usable, creating one dose per success. If the test fails, the potion is inert and useless. Gamemasters may allow player characters with the Alchemy skill to create new potions with unique effects. Base the difficulty for such creations on similar potions, with a +3 modifier to reflect the difficulty of creating new potions.",
+        "## Creating Poisons",
+        "Alchemists can also use natural ingredients to brew various poisons (see the Gamemaster's Guide). The base difficulty for brewing a poison is equal to the poison's Mystic Defense or Step Number, whichever is higher. The process works the same way as creating potions. Most alchemists working in cities will not sell poisons openly. Many alchemists, however, will sell them under the counter to favored or known customers. This is especially true in cities like Kratas, where the skills of a capable poisoner are constantly in demand.",
+        "## Analysis",
+        "A character who possesses a potion of unknown properties may attempt to analyze it. This analysis requires only a few drops of the substance and about an hour's time for analysis. The gamemaster makes a secret Alchemy test for the character against the Difficulty Number used to create the potion or other substance. One or two successes reveals the potion's general purpose, such as for healing, harm, or an antidote. Three or more successes reveals the exact effects of the potion or poison."
+      ],
+      "cost": "Novice",
+      "skillType": "General",
+      "usableAsArtisan": false,
+      "default": false
+    },
+    {
+      "id": "animal-handling",
+      "name": "Animal Handling",
+      "step": {
+        "attribute": "WIL",
+        "bonus": 0
+      },
+      "action": "Standard",
+      "actionNote": null,
+      "strain": 0,
+      "strainNote": null,
+      "page": 192,
+      "description": [
+        "The character works with domesticated animals—he might be a rider commanding horses, a driver urging mules to move, or a handler getting dogs to attack. Making an animal perform any action beyond its normal activities requires the character to make an Animal Handling test against the highest Social Defense among the target group, +1 for each additional animal.",
+        "If successful, the animals perform the requested action. The Animal Handling skill requires the character to have at least a Neutral attitude with all of the animals being commanded. Animals with a Neutral Attitude will not put themselves in dangerous situations, animals with a better attitude towards the character might."
+      ],
+      "cost": "Novice",
+      "skillType": "General",
+      "usableAsArtisan": false,
+      "default": true
+    },
+    {
+      "id": "artisan",
+      "name": "Artisan",
+      "step": {
+        "attribute": "CHA",
+        "bonus": 0
+      },
+      "action": "Sustained",
+      "actionNote": null,
+      "strain": 0,
+      "strainNote": null,
+      "page": 193,
+      "description": [
+        "This skill serves as a template for most Artisan skills.",
+        "Each Artisan skill represents an art or craft practiced by the character. Practicing an Artisan skill, however, does not necessarily make a character an artist or entertainer. For example, a character with the Artisan skill of Canvas Painting may paint pictures every other day, but may lack the impact of a true artist's work.",
+        "The Difficulty Number for most Artisan skill tests is 5, making it relatively easy for novice characters to succeed.",
+        "This ease reflects the fact that most everyone in Earthdawn practices an Artisan skill. Listed opposite are common Artisan skills (some of which are also General skills, described separately).",
+        "As with Knowledge skills, players may invent any Artisan skill they please for their character, subject to gamemaster approval."
+      ],
+      "cost": "Novice",
+      "skillType": "Artisan",
+      "usableAsArtisan": false,
+      "tables": [
+        {
+          "title": "Example Artisan Skills",
+          "columns": [
+            "Skill"
+          ],
+          "rows": [
+            [
+              "Acting"
+            ],
+            [
+              "Baking"
+            ],
+            [
+              "Basket Weaving"
+            ],
+            [
+              "Body Painting"
+            ],
+            [
+              "Carving"
+            ],
+            [
+              "Cooking"
+            ],
+            [
+              "Craft Armor"
+            ],
+            [
+              "Craft Weapon"
+            ],
+            [
+              "Dancing"
+            ],
+            [
+              "Embroidery"
+            ],
+            [
+              "Juggling"
+            ],
+            [
+              "Mapmaking"
+            ],
+            [
+              "Musician"
+            ],
+            [
+              "Poetry"
+            ],
+            [
+              "Rune Carving"
+            ],
+            [
+              "Sculpting"
+            ],
+            [
+              "Singing"
+            ],
+            [
+              "Storytelling"
+            ],
+            [
+              "Tattooing"
+            ],
+            [
+              "Wardrobe and Style"
+            ]
+          ]
+        }
+      ],
+      "default": false
+    },
+    {
+      "id": "artist",
+      "name": "Artist",
+      "step": {
+        "attribute": "CHA",
+        "bonus": 0
+      },
+      "action": "Sustained",
+      "actionNote": null,
+      "strain": 0,
+      "strainNote": null,
+      "page": 193,
+      "description": [
+        "Artists produce physical works of art that evoke an emotion in those who see it. The character makes an Artist test and records the test result.",
+        "When an observer looks at the work compare the recorded Artist test result to the observing character's Social Defense. The Success Level determines how well the character appreciates the work of art. Higher Success Levels create a more impressive experience for the observer.",
+        "Examples of the fine arts include painting, poetry (written), sculpture, and writing. A character may acquire the Artist skill multiple times to learn different types of art.",
+        "This skill can be used as an Artisan skill.",
+        "Shem is a sculptor with the Artist skill at Rank 5. Shem makes what he personally judges to be one of his best works. After finishing the work, he makes an Artist test with a result of 21.",
+        "Some time later, Kira the Thief acquires the sculpture, looking at it to try to put a price on it. Comparing the Artist test result of 21 against her Social Defense of 5 results in four successes. Kira thinks the sculpture is one of the most impressive she has ever seen! She decides to stash it away in the hope of finding a wealthy patron to buy it—if she can ever bear to part with it."
+      ],
+      "cost": "Novice",
+      "skillType": "Artisan",
+      "usableAsArtisan": true,
+      "default": false
+    },
+    {
+      "id": "bribery",
+      "name": "Bribery",
+      "step": {
+        "attribute": "CHA",
+        "bonus": 0
+      },
+      "action": "Standard",
+      "actionNote": null,
+      "strain": 0,
+      "strainNote": null,
+      "page": 194,
+      "description": [
+        "Though most societies publicly disapprove of bribes, many people are more than willing to take them. Bribery is the skill of discreetly buying favors. The character makes a Bribery test against the target's Social Defense, +1 for each additional character. If successful, the target will do the favor asked.",
+        "Small favors require a small amount of cash, for example, 5 silver pieces or the equivalent of a couple hours' wages for the target. For larger favors, a bribe equal to at least a day's earnings for the target is required. At the gamemaster's discretion, a character willing to offer larger-than-necessary bribes may receive a bonus to his Bribery test."
+      ],
+      "cost": "Novice",
+      "skillType": "General",
+      "usableAsArtisan": false,
+      "default": true
+    },
+    {
+      "id": "craft-armor",
+      "name": "Craft Armor",
+      "step": {
+        "attribute": "PER",
+        "bonus": 0
+      },
+      "action": "Sustained",
+      "actionNote": null,
+      "strain": 0,
+      "strainNote": null,
+      "page": 194,
+      "description": [
+        "The character creates new armor and shields. He must carry out his work at a properly equipped forge. Outside of a forge, the character can only make minor repairs. At gamemaster's discretion, the forge's quality may affect the amount of time required to use this skill.",
+        "To make new armor the character makes a Craft Armor test against the armor's combined Physical + Mystic Armor ratings, +5. He must accumulate a total number of successes equal to the armor's Physical Armor rating. Each test takes one week to perform.",
+        "To craft shields, the Difficulty Number is the Physical + Mystic Defense bonus, +5, and requires a number of successes equal to the shield's Physical Defense bonus.",
+        "Crafting a set of hide armor (Physical 5; Mystic 1) requires five successes against a Difficulty Number of 11 (5+1+5=11). Crafting a set of plate mail armor (Physical 9; Mystic 0) requires nine successes against a Difficulty Number of 14 (9+0+5=14). Crafting a body shield (Physical Defense+3; Mystic Defense +0) requires three successes against a Difficulty Number of 8 (3+0+5=8).",
+        "The material cost of creating a set of armor or a shield is generally half of the price shown in the Goods and Services chapter, p. 400. If the character fails his test, he makes no progress, but he may continue to work; the only thing lost is time. A Rule of One result, however, ruins the armor or shield completely—both the materials and time invested are wasted.",
+        "Damaged armor and shields can be repaired using this skill, against a Difficulty Number equal to half that required to create the item. Each success on the test repairs one point of Physical or Mystic Armor (see Repairing Damaged Armor, p.415).",
+        "This skill can be used as an Artisan skill."
+      ],
+      "cost": "Novice",
+      "skillType": "General",
+      "usableAsArtisan": true,
+      "default": false
+    },
+    {
+      "id": "craft-weapon",
+      "name": "Craft Weapon",
+      "step": {
+        "attribute": "PER",
+        "bonus": 0
+      },
+      "action": "Sustained",
+      "actionNote": null,
+      "strain": 0,
+      "strainNote": null,
+      "page": 195,
+      "description": [
+        "The character creates new weapons, including ammunition for missile weapons. He must carry out his work at a properly equipped forge. Outside of a forge, the character can only make minor repairs. At gamemaster's discretion, the forge's quality may affect the amount of time required to use this skill.",
+        "To make new weapons the character makes a Craft Weapon test against the weapon's Damage Step + 5. He must accumulate a total number of successes equal to the weapon's size. Each test takes one day to perform. Bolts, arrows and other missiles are considered to be the Size and Damage Step of the missile weapon. Success produces a number of missiles equivalent to that shown for purchase in the Goods and Services chapter, p.400.",
+        "This skill can be used as an Artisan skill.",
+        "Crafting a dagger (Size 1; Damage 2) requires one success against a Difficulty Number of 7 (2+5=7). Crafting a pole-axe (Size 6; Damage 8) requires six successes against a Difficulty Number of 13 (8+5=13). Crafting medium crossbow bolts (Size 4; Damage 5) requires four successes against a Difficulty Number of 10 (5 + 5 = 10) and creates 15 bolts.",
+        "The material cost of creating a weapon is generally half of the price shown in the Goods and Services chapter, p. 400. If the character fails his test, he makes no progress, but he may continue to work; the only thing lost is time. A Rule of One result, however, ruins the weapon completely—both the materials and time invested are wasted.",
+        "Damaged weapons can be repaired using this skill, against a Difficulty Number equal to half that required to create the item. Each success on the test repairs one point of Damage Step repaired (see Repairing Damaged Weapons, p.411)."
+      ],
+      "cost": "Novice",
+      "skillType": "General",
+      "usableAsArtisan": true,
+      "default": false
+    },
+    {
+      "id": "craftsman",
+      "name": "Craftsman",
+      "step": {
+        "attribute": "PER",
+        "bonus": 0
+      },
+      "action": "Sustained",
+      "actionNote": null,
+      "strain": 0,
+      "strainNote": null,
+      "page": 195,
+      "description": [
+        "Characters use Craftsman skills to make or repair items. The time required to make the item varies from a few hours for a simple item, to weeks or even months for large or intricate items. The character makes a Craftsman test against the Difficulty Number of making or repairing the item. Simple, everyday items have a Difficulty Number of 2; ordinary items have a Difficulty Number of 5; unusual or exotic items have a Difficulty Number of 8 or more. If the item is unusually complex, the character may need to accumulate multiple successes at the gamemaster's discretion.",
+        "The character can only make or repair an item if he has access to the proper tools and materials for the task. A successful test means the character has successfully made or repaired the item. If the test fails the character can try again; the only thing the character has lost in the first attempt is time. A Rule of One result means the attempt failed miserably, destroying the item beyond salvation.",
+        "Example craftsman skills include Blacksmith, Cooper (barrel maker), Mason, Tailor and Woodworker.",
+        "This skill can be used as an Artisan skill."
+      ],
+      "cost": "Novice",
+      "skillType": "General",
+      "usableAsArtisan": true,
+      "default": false
+    },
+    {
+      "id": "disguise",
+      "name": "Disguise",
+      "step": {
+        "attribute": "PER",
+        "bonus": 0
+      },
+      "action": "Sustained",
+      "actionNote": null,
+      "strain": 0,
+      "strainNote": null,
+      "page": 196,
+      "description": [
+        "The character uses costumes and make-up to disguise himself or another as a Namegiver of his choice. It takes a minimum of 30 minutes to prepare the disguise, and the character needs access to a full make-up kit, clothing, jewelry, and the like.",
+        "The character makes a Disguise Test, the result becoming the Difficulty Number for any attempts made to see through the disguise. The disguise lasts for a number of hours equal to the character's Disguise rank, or until the disguised character discards the costume.",
+        "The disguise cannot make radical changes; while make-up could make a dwarf look like an ork, it is difficult to make them as tall. At the gamemaster's discretion, ambitious disguises can grant a bonus to tests made to see through the disguise.",
+        "This skill only alters appearance. If a disguised character is attempting to impersonate someone else, the character will likely need other abilities, such as Acting or Mimic Voice, to convince others of his false identity."
+      ],
+      "cost": "Novice",
+      "skillType": "General",
+      "usableAsArtisan": false,
+      "default": false
+    },
+    {
+      "id": "entertainer",
+      "name": "Entertainer",
+      "step": {
+        "attribute": "CHA",
+        "bonus": 0
+      },
+      "action": "Sustained",
+      "actionNote": null,
+      "strain": 0,
+      "strainNote": null,
+      "page": 196,
+      "description": [
+        "Entertainer is the skill used for most performing arts. The character makes an Entertainer test against the highest Social Defense of any observer of his performance. The Success Level determines how much the observers enjoy the performance. Each success scored means that 25 percent of the audience enjoys and remembers the performance. A character may acquire the Entertainer skill multiple times to learn different types of performing arts. Examples include musician (one instrument), poet (spoken), singer, and storyteller.",
+        "This skill can be used as an Artisan skill."
+      ],
+      "cost": "Novice",
+      "skillType": "General",
+      "usableAsArtisan": true,
+      "default": false
+    },
+    {
+      "id": "flirting",
+      "name": "Flirting",
+      "step": {
+        "attribute": "CHA",
+        "bonus": 0
+      },
+      "action": "Sustained",
+      "actionNote": null,
+      "strain": 0,
+      "strainNote": null,
+      "page": 196,
+      "description": [
+        "The Flirting skill combines elements of flattery, intense attention, and clever word-play to affect another person. Flirtatious behavior accents conversations with hints of romance. The character makes a Flirting test against the target's Social Defense. A single success intrigues the target; he or she wants to spend more time with the flirting character, trying to learn more about him or her. With two successes the character gains the target's full attention; he or she wants to spend almost all available time with the character. Three successes leaves a lasting impression on the target. He or she will try to follow up on the relationship, seeking to continue and deepen it.",
+        "Four or more successes means the target is completely smitten; they cannot get enough of the flirting character. The skill's effect fades after one week, but another successful Flirting Test could start it all over again."
+      ],
+      "cost": "Novice",
+      "skillType": "General",
+      "usableAsArtisan": false,
+      "default": true
+    },
+    {
+      "id": "forgery",
+      "name": "Forgery",
+      "step": {
+        "attribute": "DEX",
+        "bonus": 0
+      },
+      "action": "Sustained",
+      "actionNote": null,
+      "strain": 0,
+      "strainNote": null,
+      "page": 197,
+      "description": [
+        "Forgers create false papers, legal documents, and correspondence. A character with the Forgery skill can forge artwork if he also has the appropriate Artist skill.",
+        "For example, a character with the Forgery and Artist (Painter) skills could fake the work of a famous master. Creating a forgery takes two to five times as long as creating the original. For example, a letter jotted hastily in a few minutes might take nearly an hour to forge. The character makes a Forgery Test, the result becoming the Difficulty Number for attempts to detect the forgery. Use of this skill requires materials appropriate to the item being forged."
+      ],
+      "cost": "Novice",
+      "skillType": "General",
+      "usableAsArtisan": false,
+      "default": false
+    },
+    {
+      "id": "knowledge",
+      "name": "Knowledge",
+      "step": {
+        "attribute": "PER",
+        "bonus": 0
+      },
+      "action": "Standard",
+      "actionNote": null,
+      "strain": 0,
+      "strainNote": null,
+      "page": 197,
+      "description": [
+        "The character is knowledgeable about a certain topic.",
+        "The precise definition of a Knowledge skill is determined by the player, keeping in mind that all Knowledge skills are subject to the gamemaster's approval. A Knowledge skill may cover broad areas of knowledge, meaning that the character knows a little bit about a lot of things, or he may have more focused knowledge, giving him more detailed knowledge within a smaller area of expertise.",
+        "While the area of expertise is determined by the player, the gamemaster determines how applicable the knowledge is to the question at hand.",
+        "Examples of Knowledge skills that might be appropriate or useful for characters are listed below. See Knowledge Skills, p.69, for more information on how they work."
+      ],
+      "cost": "Novice",
+      "skillType": "Knowledge",
+      "usableAsArtisan": false,
+      "tables": [
+        {
+          "title": "Example Knowledge Skills",
+          "columns": [
+            "Skill"
+          ],
+          "rows": [
+            [
+              "Alchemy and Potions"
+            ],
+            [
+              "Ancient Weapons"
+            ],
+            [
+              "Baking"
+            ],
+            [
+              "Barsaive History"
+            ],
+            [
+              "Botany"
+            ],
+            [
+              "Court Dancing"
+            ],
+            [
+              "Creature Lore"
+            ],
+            [
+              "Discipline Lore"
+            ],
+            [
+              "Farming"
+            ],
+            [
+              "Horror Lore"
+            ],
+            [
+              "Legends and Heroes"
+            ],
+            [
+              "Military Organizations"
+            ],
+            [
+              "Province History"
+            ],
+            [
+              "Racial Lore"
+            ],
+            [
+              "Scourge History"
+            ],
+            [
+              "Trade Routes"
+            ],
+            [
+              "Wild Animals"
+            ]
+          ]
+        }
+      ],
+      "default": false
+    },
+    {
+      "id": "mapmaking",
+      "name": "Mapmaking",
+      "step": {
+        "attribute": "PER",
+        "bonus": 0
+      },
+      "action": "Sustained",
+      "actionNote": null,
+      "strain": 0,
+      "strainNote": null,
+      "page": 197,
+      "description": [
+        "To get where they want to go and avoid unsafe spots, characters traveling over land need a map. Barsaive covers a large area, and the Scourge altered Barsaive's geography by destroying many towns and cities, forcing others to relocate and altering landmarks and geographic features.",
+        "In the time since the Scourge, no one has undertaken an expedition solely to map Barsaive, and so no reliable maps of post-Scourge Barsaive exist. Most current maps only indicate major landmarks such as larger rivers and mountain ranges, Death's Sea, major cities like Iopos, Travar, Jerris, and Kratas, and the Kingdom of Throal. Some more expensive maps show the main trade routes across the province, but most of these are commissioned by traders and are not for sale.",
+        "Most mapmakers in Barsaive draw their maps to be used with a device called Shantaya's sextant. Shantaya was an elven Troubadour who traveled across the province and mapped it in the years before the Scourge. As a way to standardize her work, she developed a device to chart distance and bearings using the maps she drew. By aligning the sextant with certain landmarks on the map, a traveler can determine the bearing and distance to various places in Barsaive.",
+        "Mapmaking is a Craftsman skill. Characters can create maps in two ways—by copying an existing map or drawing an original map. To draw an original map, a character must have traveled over the area he is mapping. To draw an original map, the character makes a Mapmaking (7) test. This must be accompanied by successful Navigation Tests (p. 160) to keep track of position, unless the map is for a very small area.",
+        "To copy an existing map, the character makes a Mapmaking (5) test. The Success Level of the test determines the quality of the map produced. A single success yields a functional map with a few basic details and landmarks; two or three successes yields a map that characters can use with Shantaya's sextant; four or more successes yields a highly accurate map that gives a +1 bonus to any Navigation Test made using it.",
+        "This skill may be used as an Artisan skill."
+      ],
+      "cost": "Novice",
+      "skillType": "General",
+      "usableAsArtisan": true,
+      "default": false
+    },
+    {
+      "id": "physician",
+      "name": "Physician",
+      "step": {
+        "attribute": "PER",
+        "bonus": 0
+      },
+      "action": "Sustained",
+      "actionNote": null,
+      "strain": 0,
+      "strainNote": null,
+      "page": 198,
+      "cost": "Novice",
+      "skillType": "General",
+      "usableAsArtisan": false,
+      "description": [
+        "The character diagnoses and prescribes treatments for injuries and diseases by examining the injury for half an hour, then making a Physician test against the condition's Difficulty Number. If successful, he learns what the problem is and how to treat it. The character's Physician rank is added to the next Recovery or resistance test his patient makes as applicable. The gamemaster determines the Difficulty Number for ailments, with suggested Difficulty Numbers for common ailments listed below. A physician can attempt to treat the same ailment a number of times per day equal to the patient's Number of Recovery tests.",
+        "Treating raw damage is treating an Injury, the effect of successful treatment is a Recovery test bonus, as noted above. The Physician skill can be used to treat Wounds. Wounds are treated individually, the physician has to take time to stitch or bandage each Wound.",
+        "Successful treatment of a Wound does not heal it, but removes its penalty to Recovery Tests (see Recovering from Injury, p. 380), thereby allowing to heal it faster. Treating Wounds in that way also eliminates most risks of infection."
+      ],
+      "tables": [
+        {
+          "title": "Physician Table",
+          "columns": [
+            "Ailment",
+            "Difficulty Number"
+          ],
+          "rows": [
+            [
+              "Common Cold",
+              "4"
+            ],
+            [
+              "Injury and Wounds",
+              "5"
+            ],
+            [
+              "Influenza",
+              "6"
+            ],
+            [
+              "Mild Poison",
+              "6"
+            ],
+            [
+              "Broken Bones",
+              "8"
+            ],
+            [
+              "Strong Poison",
+              "11"
+            ],
+            [
+              "Black Death",
+              "15"
+            ]
+          ]
+        }
+      ],
+      "default": false
+    },
+    {
+      "id": "pilot-boat",
+      "name": "Pilot Boat",
+      "step": {
+        "attribute": "PER",
+        "bonus": 0
+      },
+      "action": "Sustained",
+      "actionNote": null,
+      "strain": 0,
+      "strainNote": null,
+      "page": 199,
+      "description": [
+        "The Pilot Boat skill is used to operate the fire-engine powered riverboats of the t'skrang commonly seen on the Serpent River. It is used the same way as Air Sailing, but for fire-engine driven boats only. 25 percent of the crew making successful tests mean the ship can hold position and does not drift, 50 percent means the ship can maneuver against the current in straight lines, 75 percent mean the ship can navigate freely and make complex maneuvers."
+      ],
+      "cost": "Novice",
+      "skillType": "General",
+      "usableAsArtisan": false,
+      "default": false
+    },
+    {
+      "id": "read-write-language",
+      "name": "Read/Write Language",
+      "step": {
+        "attribute": "PER",
+        "bonus": 0
+      },
+      "action": "Standard",
+      "actionNote": null,
+      "strain": 0,
+      "strainNote": null,
+      "page": 199,
+      "description": [
+        "The character learns to read and write different languages. See Language Skills, p.191, for details on how the skill differs from the talent. It is otherwise used as described for the Read/Write Language talent, p.162, but does not cause Strain."
+      ],
+      "cost": "Novice",
+      "skillType": "Language",
+      "usableAsArtisan": false,
+      "default": false
+    },
+    {
+      "id": "sailing",
+      "name": "Sailing",
+      "step": {
+        "attribute": "DEX",
+        "bonus": 0
+      },
+      "action": "Sustained",
+      "actionNote": null,
+      "strain": 0,
+      "strainNote": null,
+      "page": 199,
+      "description": [
+        "The character sails watercraft, whether muscle-powered or wind-powered, but not fire-powered vessels, like the legendary t'skrang riverboats (see Pilot Boat, p.199), or propelled by magic, like airships (see Air Sailing, p. 125). It is used the same way as Air Sailing, but for waterborne craft propelled by wind or muscle power.",
+        "If 25 percent of the crew make successful tests the boat is kept from drifting, 50 percent allows the boat to sail with the wind, 75 percent allows the boat to sail against the wind and perform maneuvers."
+      ],
+      "cost": "Novice",
+      "skillType": "General",
+      "usableAsArtisan": false,
+      "default": false
+    },
+    {
+      "id": "seduction",
+      "name": "Seduction",
+      "step": {
+        "attribute": "CHA",
+        "bonus": 0
+      },
+      "action": "Sustained",
+      "actionNote": null,
+      "strain": 0,
+      "strainNote": null,
+      "page": 200,
+      "description": [
+        "Characters use the Seduction skill to convince members of their preferred sex to become romantically involved with them. A seduction has four stages: First Impression, Intriguing Conversation, Move to Intimacy, and the Suggestion. Each stage requires at least 10 minutes of interaction before the test is made, the gamemaster may modify this for the target's Attitude or the player's roleplaying. After that time, the character makes a Seduction test against the target's Social Defense. If successful, the seduction moves to the next stage. Failure means the stage has to be repeated, requiring more time.",
+        "Each stage can be repeated a number of times equal to the character's Seduction Rank per day. For each success above that required for moving to the next stage, the character gains a +1 bonus to all Seduction tests made during the next stage of the process.",
+        "First Impression can be a glance, a striking outfit, a dramatic entrance, an opening line—all the pieces that fit together to make a good impression. To make a successful First Impression, a character needs only a single success.",
+        "Intriguing Conversation requires wit, flattery, a willingness to reveal hints about oneself, and the ability to pick up and respond to cues from the target. The object of Intriguing Conversation is to make the target feel special, like the most important and attractive person in the room, at the same time presenting your character as an attractive partner. To be successful, Intriguing Conversation requires two successes.",
+        "With a Move to Intimacy, your character begins to get more personal with the target character, gradually altering tone of voice, body language and the subjects of conversation to reveal even more about himself, learn more about the target, and develop a deeper rapport. A successful Move to Intimacy requires two successes.",
+        "The Suggestion occurs when your character suggests to the target character just how your character would like this encounter to end. A successful Suggestion requires three successes. Your character gets only one chance to make the Suggestion.",
+        "A successful seduction creates other effects beyond satisfying the immediate suggestion. The seduced character's Attitude toward your character improves by two degrees for the next 24 hours, and permanently improves by one degree as long as your character does not behave badly toward or betray the seduced character."
+      ],
+      "cost": "Novice",
+      "skillType": "General",
+      "usableAsArtisan": false,
+      "default": true
+    },
+    {
+      "id": "speak-language",
+      "name": "Speak Language",
+      "step": {
+        "attribute": "PER",
+        "bonus": 0
+      },
+      "action": "Standard",
+      "actionNote": null,
+      "strain": 0,
+      "strainNote": null,
+      "page": 200,
+      "description": [
+        "The character learns to communicate with others in different languages. See Language Skills, p.191, for details on how the skill differs from the talent. It is otherwise used as described for the Speak Language talent, p.167, but does not cause Strain."
+      ],
+      "cost": "Novice",
+      "skillType": "Language",
+      "usableAsArtisan": false,
+      "default": false
+    },
+    {
+      "id": "streetwise",
+      "name": "Streetwise",
+      "step": {
+        "attribute": "CHA",
+        "bonus": 0
+      },
+      "action": "Sustained",
+      "actionNote": null,
+      "strain": 0,
+      "strainNote": null,
+      "page": 201,
+      "description": [
+        "A character with the Streetwise skill knows the ins and outs of urban environments, particularly the seedier side of cities. Streetwise is used like Etiquette (p. 144) for scenarios where the character tries to fit into criminal or street subculture. Streetwise also allows a character to gain the trust of other characters living apart from society who would otherwise not speak to him. The character makes a Streetwise test against the highest Social Defense among a target group, +1 per additional character. If successful, the targets are convinced that the character is a local street element and not sent by the authorities or otherwise out to disrupt their trade. They will interact with the character, but are not necessarily friendly.",
+        "Streetwise can also act as a Knowledge skill when trying to find information typically available to local underground characters, such as the location of black markets. The character does not have any knowledge, but can emulate a Knowledge skill by asking around, dropping a few silvers into the right palms. This follows the rules for making Knowledge tests (p. 188)."
+      ],
+      "cost": "Novice",
+      "skillType": "General",
+      "usableAsArtisan": false,
+      "default": false
+    },
+    {
+      "id": "swimming",
+      "name": "Swimming",
+      "step": {
+        "attribute": "STR",
+        "bonus": 0
+      },
+      "action": "Standard",
+      "actionNote": null,
+      "strain": 0,
+      "strainNote": null,
+      "page": 201,
+      "cost": "Novice",
+      "skillType": "General",
+      "usableAsArtisan": false,
+      "description": [
+        "All t'skrang, and many other Namegiver races who live near water, learn to swim. Characters make a Swimming test against a Difficulty Number determined by the condition of the water around them. Recommended Difficulty Numbers are given below.",
+        "Swimming uses a Standard Action every round, but a test is only made when the water condition changes or at the gamemaster's discretion. While swimming, a character's Movement Rate is halved, though when swimming with or against a strong current, the gamemaster may grant a bonus (or penalty) to the Movement Rate. Characters who fail their Swimming test make no appreciable progress. On a Rule of One result, the character starts drowning (see the Gamemaster's Guide).",
+        "## Races and Swimming",
+        "Obsidimen cannot swim. If an obsidiman falls in the water he sinks and must find another way to quickly climb out. Obsidimen never possess knowledge of the Swimming skill and cannot even use it as Default Skill. Windlings only swim if they have no other option, as getting their wings wet cripples their flying ability. Windlings never use Swimming as a Default Skill, although intrepid members of this race can learn it. Windlings use half their ground Movement Rate when swimming. T'skrang are at home in the water and use their normal Movement Rate when swimming."
+      ],
+      "tables": [
+        {
+          "title": "Water Condition Table",
+          "columns": [
+            "Difficulty Number",
+            "Water Condition"
+          ],
+          "rows": [
+            [
+              "4",
+              "Calm water"
+            ],
+            [
+              "5",
+              "Small waves"
+            ],
+            [
+              "7",
+              "Slow river current"
+            ],
+            [
+              "9",
+              "Moderate river current"
+            ],
+            [
+              "13",
+              "Major river current"
+            ],
+            [
+              "15",
+              "Open ocean"
+            ]
+          ]
+        }
+      ],
+      "default": true
+    }
+  ]
+}

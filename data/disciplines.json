@@ -1,0 +1,4021 @@
+{
+  "source": "Earthdawn 4e Player's Guide - Disciplines chapter",
+  "disciplines": [
+    {
+      "id": "air-sailor",
+      "name": "Air Sailor",
+      "description": "Air Sailors are the swashbuckling brotherhood of the sky. Air Sailors never leave their fellows behind and embrace the idea of togetherness, working to protect and spread civilization, rather than preying upon it.",
+      "importantAttributes": [
+        "DEX",
+        "WIL",
+        "CHA"
+      ],
+      "karmaRitual": "The Air Sailor sits alone in silent meditation under the open sky for several minutes, picturing in his mind's eye his airship sailing through the clouds at the start of a long journey. The adept envisions an aerial journey he hopes to make one day, imagining scenes of this journey, including the risks and perils, and how his training and skills might help make the journey a safe one. The ritual is complete when, half an hour later, the imagined journey ends safely.",
+      "artisanSkills": [
+        "Rune Carving",
+        "Sail Embroidery"
+      ],
+      "halfMagic": "The Air Sailor's uses for Half-Magic include knowledge of airship designs, recognition of different types of airships, commonly followed flight paths, and airship crew complements. It may also cover the maintenance, repair, and construction of airships.",
+      "talentOptions": {
+        "Novice": [
+          {
+            "ref": "acrobatic-defense",
+            "name": "Acrobatic Defense"
+          },
+          {
+            "ref": "distract",
+            "name": "Distract"
+          },
+          {
+            "ref": "first-impression",
+            "name": "First Impression"
+          },
+          {
+            "ref": "great-leap",
+            "name": "Great Leap"
+          },
+          {
+            "ref": "haggle",
+            "name": "Haggle"
+          },
+          {
+            "ref": "maneuver",
+            "name": "Maneuver"
+          },
+          {
+            "ref": "navigation",
+            "name": "Navigation"
+          },
+          {
+            "ref": "speak-language",
+            "name": "Speak Language"
+          },
+          {
+            "ref": "taunt",
+            "name": "Taunt"
+          },
+          {
+            "ref": "throwing-weapons",
+            "name": "Throwing Weapons"
+          }
+        ],
+        "Journeyman": [
+          {
+            "ref": "air-speaking",
+            "name": "Air Speaking"
+          },
+          {
+            "ref": "battle-bellow",
+            "name": "Battle Bellow"
+          },
+          {
+            "ref": "conceal-object",
+            "name": "Conceal Object"
+          },
+          {
+            "ref": "engaging-banter",
+            "name": "Engaging Banter"
+          },
+          {
+            "ref": "etiquette",
+            "name": "Etiquette"
+          },
+          {
+            "ref": "graceful-exit",
+            "name": "Graceful Exit"
+          },
+          {
+            "ref": "leadership",
+            "name": "Leadership"
+          },
+          {
+            "ref": "resist-taunt",
+            "name": "Resist Taunt"
+          },
+          {
+            "ref": "second-weapon",
+            "name": "Second Weapon"
+          },
+          {
+            "ref": "surprise-strike",
+            "name": "Surprise Strike"
+          }
+        ]
+      },
+      "circles": [
+        {
+          "circle": 1,
+          "disciplineTalents": [
+            {
+              "ref": "avoid-blow",
+              "name": "Avoid Blow"
+            },
+            {
+              "ref": "climbing",
+              "name": "Climbing"
+            },
+            {
+              "ref": "melee-weapons",
+              "name": "Melee Weapons"
+            },
+            {
+              "ref": "thread-weaving",
+              "name": "Thread Weaving",
+              "variant": "Air Weaving"
+            },
+            {
+              "ref": "wind-catcher",
+              "name": "Wind Catcher"
+            }
+          ],
+          "abilities": [
+            {
+              "type": "karma",
+              "name": "Karma",
+              "text": "The adept may spend Karma once per round on any action taken while on board an airship."
+            }
+          ],
+          "freeTalents": [
+            {
+              "ref": "air-sailing",
+              "name": "Air Sailing"
+            }
+          ]
+        },
+        {
+          "circle": 2,
+          "disciplineTalents": [
+            {
+              "ref": "awareness",
+              "name": "Awareness"
+            }
+          ],
+          "abilities": [
+            {
+              "type": "defense",
+              "name": "Defense",
+              "text": "The adept adds +1 to his Physical Defense.",
+              "defense": "physical",
+              "bonus": 1
+            }
+          ]
+        },
+        {
+          "circle": 3,
+          "disciplineTalents": [
+            {
+              "ref": "empathic-sense",
+              "name": "Empathic Sense"
+            }
+          ],
+          "abilities": [
+            {
+              "type": "karma",
+              "name": "Karma",
+              "text": "The adept may spend a Karma Point on Initiative tests."
+            }
+          ]
+        },
+        {
+          "circle": 4,
+          "disciplineTalents": [
+            {
+              "ref": "wound-balance",
+              "name": "Wound Balance"
+            }
+          ],
+          "abilities": [
+            {
+              "type": "defense",
+              "name": "Defense",
+              "text": "The adept adds +1 to his Social Defense.",
+              "defense": "social",
+              "bonus": 1
+            }
+          ]
+        },
+        {
+          "circle": 5,
+          "disciplineTalents": [
+            {
+              "ref": "heartening-laugh",
+              "name": "Heartening Laugh"
+            }
+          ],
+          "abilities": [
+            {
+              "type": "collaborate",
+              "name": "Collaborate",
+              "text": "Once per round as a Simple action, the adept may take 1 Strain to give an ally a +2 bonus to a test towards achieving a common goal. The player should describe how they are assisting their ally."
+            },
+            {
+              "type": "karma",
+              "name": "Karma",
+              "text": "The adept may spend 1 Karma Point on Interaction Tests"
+            }
+          ]
+        },
+        {
+          "circle": 6,
+          "disciplineTalents": [
+            {
+              "ref": "air-dance",
+              "name": "Air Dance"
+            }
+          ],
+          "abilities": [
+            {
+              "type": "defense",
+              "name": "Defense",
+              "text": "The adept adds +2 to his Physical Defense.",
+              "defense": "physical",
+              "bonus": 2
+            }
+          ]
+        },
+        {
+          "circle": 7,
+          "disciplineTalents": [
+            {
+              "ref": "inspire-others",
+              "name": "Inspire Others"
+            }
+          ],
+          "abilities": [
+            {
+              "type": "recovery",
+              "name": "Recovery",
+              "text": "The adept gains an additional Recovery test.",
+              "bonus": 1
+            }
+          ]
+        },
+        {
+          "circle": 8,
+          "disciplineTalents": [
+            {
+              "ref": "lion-heart",
+              "name": "Lion Heart"
+            }
+          ],
+          "abilities": [
+            {
+              "type": "defense",
+              "name": "Defense",
+              "text": "The adept adds +3 to his Physical Defense.",
+              "defense": "physical",
+              "bonus": 3
+            }
+          ]
+        }
+      ],
+      "durability": 5
+    },
+    {
+      "id": "archer",
+      "name": "Archer",
+      "description": "The Archer learns the art of the bow and crossbow, and by extension, all types of ranged attacks. This Discipline stresses accuracy and speed. Most Archers show greatly enhanced perceptive powers, frequently noticing things that others miss.",
+      "importantAttributes": [
+        "DEX",
+        "PER"
+      ],
+      "karmaRitual": "The Archer spends a few minutes oiling and stringing his bow, then starts meditating, with the bow in front of him and his arrows fanned out beside him on the ground. As he meditates, he seeks the stillness before the arrow is released from the string. The Archer then fires three arrows at a target, forming a rough triangle no more than a foot wide, then fires a fourth arrow into the center of the triangle. The ritual is complete when the last arrow hits.",
+      "artisanSkills": [
+        "Arrow Fletching",
+        "Wood Carving"
+      ],
+      "halfMagic": "Archers may use half-magic when caring for ranged weapons and to recognize different types of ranged weapons, ammunition, or their creators.",
+      "talentOptions": {
+        "Novice": [
+          {
+            "ref": "awareness",
+            "name": "Awareness"
+          },
+          {
+            "ref": "climbing",
+            "name": "Climbing"
+          },
+          {
+            "ref": "creature-analysis",
+            "name": "Creature Analysis"
+          },
+          {
+            "ref": "first-impression",
+            "name": "First Impression"
+          },
+          {
+            "ref": "impressive-display",
+            "name": "Impressive Display"
+          },
+          {
+            "ref": "navigation",
+            "name": "Navigation"
+          },
+          {
+            "ref": "stealthy-stride",
+            "name": "Stealthy Stride"
+          },
+          {
+            "ref": "throwing-weapons",
+            "name": "Throwing Weapons"
+          },
+          {
+            "ref": "tracking",
+            "name": "Tracking"
+          },
+          {
+            "ref": "wilderness-survival",
+            "name": "Wilderness Survival"
+          }
+        ],
+        "Journeyman": [
+          {
+            "ref": "conversation",
+            "name": "Conversation"
+          },
+          {
+            "ref": "danger-sense",
+            "name": "Danger Sense"
+          },
+          {
+            "ref": "distract",
+            "name": "Distract"
+          },
+          {
+            "ref": "etiquette",
+            "name": "Etiquette"
+          },
+          {
+            "ref": "evidence-analysis",
+            "name": "Evidence Analysis"
+          },
+          {
+            "ref": "resist-taunt",
+            "name": "Resist Taunt"
+          },
+          {
+            "ref": "speak-language",
+            "name": "Speak Language"
+          },
+          {
+            "ref": "steel-thought",
+            "name": "Steel Thought"
+          },
+          {
+            "ref": "stopping-aim",
+            "name": "Stopping Aim"
+          },
+          {
+            "ref": "tiger-spring",
+            "name": "Tiger Spring"
+          }
+        ]
+      },
+      "circles": [
+        {
+          "circle": 1,
+          "disciplineTalents": [
+            {
+              "ref": "avoid-blow",
+              "name": "Avoid Blow"
+            },
+            {
+              "ref": "missile-weapons",
+              "name": "Missile Weapons"
+            },
+            {
+              "ref": "mystic-aim",
+              "name": "Mystic Aim"
+            },
+            {
+              "ref": "thread-weaving",
+              "name": "Thread Weaving",
+              "variant": "Arrow Weaving"
+            },
+            {
+              "ref": "true-shot",
+              "name": "True Shot"
+            }
+          ],
+          "abilities": [
+            {
+              "type": "karma",
+              "name": "Karma",
+              "text": "The adept may spend a Karma Point on Perception tests that rely on sight."
+            }
+          ],
+          "freeTalents": [
+            {
+              "ref": "call-missile",
+              "name": "Call Missile"
+            }
+          ]
+        },
+        {
+          "circle": 2,
+          "disciplineTalents": [
+            {
+              "ref": "mystic-pursuit",
+              "name": "Mystic Pursuit"
+            }
+          ],
+          "abilities": [
+            {
+              "type": "defense",
+              "name": "Defense",
+              "text": "The adept adds +1 to his Physical Defense.",
+              "defense": "physical",
+              "bonus": 1
+            }
+          ]
+        },
+        {
+          "circle": 3,
+          "disciplineTalents": [
+            {
+              "ref": "anticipate-blow",
+              "name": "Anticipate Blow"
+            }
+          ],
+          "abilities": [
+            {
+              "type": "karma",
+              "name": "Karma",
+              "text": "The adept may spend a Karma Point on Initiative tests."
+            }
+          ]
+        },
+        {
+          "circle": 4,
+          "disciplineTalents": [
+            {
+              "ref": "long-shot",
+              "name": "Long Shot"
+            }
+          ],
+          "abilities": [
+            {
+              "type": "defense",
+              "name": "Defense",
+              "text": "The adept adds +1 to his Mystic Defense.",
+              "defense": "mystic",
+              "bonus": 1
+            }
+          ]
+        },
+        {
+          "circle": 5,
+          "disciplineTalents": [
+            {
+              "ref": "spot-armor-flaw",
+              "name": "Spot Armor Flaw"
+            }
+          ],
+          "abilities": [
+            {
+              "type": "create-projectile",
+              "name": "Create Projectile",
+              "text": "Once per round as a Standard action, the adept may take 1 Strain, and make an Arrow Weaving (6) test. Each success creates one arrow, bolt, or throwing weapon. All items created must be of the same type. The projectiles last for Arrow Weaving Rank in minutes, after which they disappear. They are treated as normal weapons or ammunition for the purpose of talents or spells that require it."
+            },
+            {
+              "type": "karma",
+              "name": "Karma",
+              "text": "The adept may spend 1 Karma Point on Damage tests made with ranged weapons."
+            }
+          ]
+        },
+        {
+          "circle": 6,
+          "disciplineTalents": [
+            {
+              "ref": "bank-shot",
+              "name": "Bank Shot"
+            }
+          ],
+          "abilities": [
+            {
+              "type": "defense",
+              "name": "Defense",
+              "text": "The adept adds +2 to his Physical Defense.",
+              "defense": "physical",
+              "bonus": 2
+            }
+          ]
+        },
+        {
+          "circle": 7,
+          "disciplineTalents": [
+            {
+              "ref": "flame-arrow",
+              "name": "Flame Arrow"
+            }
+          ],
+          "abilities": [
+            {
+              "type": "initiative",
+              "name": "Initiative",
+              "text": "The adept gains +1 Step to their Initiative.",
+              "bonus": 1
+            }
+          ]
+        },
+        {
+          "circle": 8,
+          "disciplineTalents": [
+            {
+              "ref": "second-shot",
+              "name": "Second Shot"
+            }
+          ],
+          "abilities": [
+            {
+              "type": "defense",
+              "name": "Defense",
+              "text": "The adept adds +3 to his Physical Defense.",
+              "defense": "physical",
+              "bonus": 3
+            }
+          ]
+        }
+      ],
+      "durability": 5
+    },
+    {
+      "id": "beastmaster",
+      "name": "Beastmaster",
+      "description": "Beastmasters are adepts that use magic to emulate and interact with animals and other creatures. Some develop these abilities to become expert trackers and survivalists, while others forge magical bonds with animal companions, or train and care for the domestic animals that support day to day life in Barsaive.",
+      "importantAttributes": [
+        "DEX",
+        "WIL",
+        "CHA"
+      ],
+      "karmaRitual": "The Beastmaster walks off a large circle around the area on which he last slept. Then he sits in the center of the circle and makes a silent, meditative call to the animals of the area. At the end of the half-hour-long ritual, an animal typical of the local wildlife approaches, but does not enter, the circle. The adept motions for the animal to enter the circle, thus completing the ritual. The animal then leaves the circle and departs.",
+      "artisanSkills": [
+        "Body Painting",
+        "Wood Carving"
+      ],
+      "halfMagic": "Beastmasters may use half-magic when dealing with or caring for animals in ways beyond those described by their talents, including animal husbandry and first aid. Beastmasters may use half-magic when recognizing different animals, animal tracks, and abnormal behavior among animals and creatures.",
+      "notes": [
+        {
+          "name": "Note",
+          "text": "Many of the Beastmaster's talents and abilities refer to Animal Companions. An animal may be considered an Animal Companion if it has a Loyal attitude towards the Beastmaster. See the Animal Bond talent on p.125 for details."
+        }
+      ],
+      "talentOptions": {
+        "Novice": [
+          {
+            "ref": "acrobatic-defense",
+            "name": "Acrobatic Defense"
+          },
+          {
+            "ref": "animal-bond",
+            "name": "Animal Bond"
+          },
+          {
+            "ref": "animal-training",
+            "name": "Animal Training"
+          },
+          {
+            "ref": "borrow-sense",
+            "name": "Borrow Sense"
+          },
+          {
+            "ref": "climbing",
+            "name": "Climbing"
+          },
+          {
+            "ref": "creature-analysis",
+            "name": "Creature Analysis"
+          },
+          {
+            "ref": "danger-sense",
+            "name": "Danger Sense"
+          },
+          {
+            "ref": "enhance-animal-companion",
+            "name": "Enhance Animal Companion"
+          },
+          {
+            "ref": "stealthy-stride",
+            "name": "Stealthy Stride"
+          },
+          {
+            "ref": "tracking",
+            "name": "Tracking"
+          }
+        ],
+        "Journeyman": [
+          {
+            "ref": "animal-companion-durability",
+            "name": "Animal Companion Durability"
+          },
+          {
+            "ref": "animal-possession",
+            "name": "Animal Possession"
+          },
+          {
+            "ref": "battle-bellow",
+            "name": "Battle Bellow"
+          },
+          {
+            "ref": "call-animal-companion",
+            "name": "Call Animal Companion"
+          },
+          {
+            "ref": "cobra-strike",
+            "name": "Cobra Strike"
+          },
+          {
+            "ref": "iron-constitution",
+            "name": "Iron Constitution"
+          },
+          {
+            "ref": "lion-heart",
+            "name": "Lion Heart"
+          },
+          {
+            "ref": "sprint",
+            "name": "Sprint"
+          },
+          {
+            "ref": "swift-kick",
+            "name": "Swift Kick"
+          },
+          {
+            "ref": "tiger-spring",
+            "name": "Tiger Spring"
+          }
+        ]
+      },
+      "circles": [
+        {
+          "circle": 1,
+          "disciplineTalents": [
+            {
+              "ref": "avoid-blow",
+              "name": "Avoid Blow"
+            },
+            {
+              "ref": "claw-shape",
+              "name": "Claw Shape"
+            },
+            {
+              "ref": "thread-weaving",
+              "name": "Thread Weaving",
+              "variant": "Beast Weaving"
+            },
+            {
+              "ref": "unarmed-combat",
+              "name": "Unarmed Combat"
+            },
+            {
+              "ref": "wilderness-survival",
+              "name": "Wilderness Survival"
+            }
+          ],
+          "abilities": []
+        },
+        {
+          "circle": 2,
+          "disciplineTalents": [
+            {
+              "ref": "awareness",
+              "name": "Awareness"
+            }
+          ],
+          "abilities": [
+            {
+              "type": "defense",
+              "name": "Defense",
+              "text": "The adept adds +1 to his Physical Defense.",
+              "defense": "physical",
+              "bonus": 1
+            }
+          ]
+        },
+        {
+          "circle": 3,
+          "disciplineTalents": [
+            {
+              "ref": "dominate-beast",
+              "name": "Dominate Beast"
+            }
+          ],
+          "abilities": [
+            {
+              "type": "karma",
+              "name": "Karma",
+              "text": "The adept may spend a Karma Point on Recovery tests."
+            }
+          ]
+        },
+        {
+          "circle": 4,
+          "disciplineTalents": [
+            {
+              "ref": "great-leap",
+              "name": "Great Leap"
+            }
+          ],
+          "abilities": [
+            {
+              "type": "defense",
+              "name": "Defense",
+              "text": "The adept adds +1 to his Social Defense.",
+              "defense": "social",
+              "bonus": 1
+            }
+          ]
+        },
+        {
+          "circle": 5,
+          "disciplineTalents": [
+            {
+              "ref": "blood-share",
+              "name": "Blood Share"
+            }
+          ],
+          "abilities": [
+            {
+              "type": "cat's-grace",
+              "name": "Cat's Grace",
+              "text": "The adept automatically succeeds at tests to maintain balance (not including Knockdown tests) and may stand up as a simple action with no cost or test."
+            },
+            {
+              "type": "karma",
+              "name": "Karma",
+              "text": "The adept may spend a point of Karma on any unarmed Damage test."
+            }
+          ]
+        },
+        {
+          "circle": 6,
+          "disciplineTalents": [
+            {
+              "ref": "animal-talk",
+              "name": "Animal Talk"
+            }
+          ],
+          "abilities": [
+            {
+              "type": "defense",
+              "name": "Defense",
+              "text": "The adept adds +2 to his Physical Defense.",
+              "defense": "physical",
+              "bonus": 2
+            }
+          ]
+        },
+        {
+          "circle": 7,
+          "disciplineTalents": [
+            {
+              "ref": "down-strike",
+              "name": "Down Strike"
+            }
+          ],
+          "abilities": [
+            {
+              "type": "recovery",
+              "name": "Recovery",
+              "text": "The adept gains an additional Recovery test.",
+              "bonus": 1
+            }
+          ]
+        },
+        {
+          "circle": 8,
+          "disciplineTalents": [
+            {
+              "ref": "claw-frenzy",
+              "name": "Claw Frenzy"
+            }
+          ],
+          "abilities": [
+            {
+              "type": "defense",
+              "name": "Defense",
+              "text": "The adept adds +3 to his Physical Defense.",
+              "defense": "physical",
+              "bonus": 3
+            }
+          ]
+        }
+      ],
+      "durability": 7
+    },
+    {
+      "id": "cavalryman",
+      "name": "Cavalryman",
+      "description": "Members of the Cavalryman Discipline are fierce, mounted warriors. They train with their mounts and form a close empathic bond with them. A Cavalryman typically respects his mount more than any Namegiver, with the possible exception of other Cavalrymen. This Discipline emphasizes motion and empathy for one's mount.",
+      "importantAttributes": [
+        "DEX",
+        "PER",
+        "CHA"
+      ],
+      "karmaRitual": "The Cavalryman plants a target in the ground, then rides his mount several minutes distance away. Blindfolding himself, he directs his mount to return to the target. Once he closes to about 100 yards, the Cavalryman uses the almost psychic connection with his mount, and whatever other empathic talents he possesses, to urge his mount to charge the target. Still blindfolded, the Cavalryman strikes the target with one of his weapons. He then removes the blindfold to end the ritual.",
+      "artisanSkills": [
+        "Body Painting",
+        "Braiding"
+      ],
+      "halfMagic": "Cavalrymen may use half-magic for knowledge of different types of mounts used by the Namegiver races, upkeep of riding gear, animal husbandry and first aid, and knowledge of significant cavalry units in Barsaive.",
+      "notes": [
+        {
+          "name": "Mount",
+          "text": "Cavalrymen begin the game with a mount of the gamemaster's approval (see p. 431 for a selection). The mount is trained for riding only; the Cavalryman needs to combat-train it (p. 395). Humans, orks, and elves prefer horses, although many tribal ork Cavalrymen use thundra beasts. Trolls, windlings and dwarfs find horses awkward to ride. Some dwarf Cavalrymen ride ponies due to their short size; some use the troajin or the huttawa. Because of their size and weight, troll Cavalrymen are known to ride large war horses, but most ride an unusually strong and sturdy breed of horse called a granlain. Too small to ride normal horses, windling Cavalrymen most often ride small lizard-like mounts known as kues, or large birds called zoaks."
+        }
+      ],
+      "talentOptions": {
+        "Novice": [
+          {
+            "ref": "avoid-blow",
+            "name": "Avoid Blow"
+          },
+          {
+            "ref": "battle-shout",
+            "name": "Battle Shout"
+          },
+          {
+            "ref": "blood-share",
+            "name": "Blood Share"
+          },
+          {
+            "ref": "conversation",
+            "name": "Conversation"
+          },
+          {
+            "ref": "creature-analysis",
+            "name": "Creature Analysis"
+          },
+          {
+            "ref": "dominate-beast",
+            "name": "Dominate Beast"
+          },
+          {
+            "ref": "first-impression",
+            "name": "First Impression"
+          },
+          {
+            "ref": "heartening-laugh",
+            "name": "Heartening Laugh"
+          },
+          {
+            "ref": "speak-language",
+            "name": "Speak Language"
+          },
+          {
+            "ref": "sure-mount",
+            "name": "Sure Mount"
+          }
+        ],
+        "Journeyman": [
+          {
+            "ref": "animal-companion-durability",
+            "name": "Animal Companion Durability"
+          },
+          {
+            "ref": "empathic-sense",
+            "name": "Empathic Sense"
+          },
+          {
+            "ref": "etiquette",
+            "name": "Etiquette"
+          },
+          {
+            "ref": "fearsome-charge",
+            "name": "Fearsome Charge"
+          },
+          {
+            "ref": "leadership",
+            "name": "Leadership"
+          },
+          {
+            "ref": "lion-heart",
+            "name": "Lion Heart"
+          },
+          {
+            "ref": "missile-weapons",
+            "name": "Missile Weapons"
+          },
+          {
+            "ref": "mount-attack",
+            "name": "Mount Attack"
+          },
+          {
+            "ref": "spirit-mount",
+            "name": "Spirit Mount"
+          },
+          {
+            "ref": "tactics",
+            "name": "Tactics"
+          }
+        ]
+      },
+      "circles": [
+        {
+          "circle": 1,
+          "disciplineTalents": [
+            {
+              "ref": "animal-bond",
+              "name": "Animal Bond"
+            },
+            {
+              "ref": "charge",
+              "name": "Charge"
+            },
+            {
+              "ref": "melee-weapons",
+              "name": "Melee Weapons"
+            },
+            {
+              "ref": "thread-weaving",
+              "name": "Thread Weaving",
+              "variant": "Rider Weaving"
+            },
+            {
+              "ref": "trick-riding",
+              "name": "Trick Riding"
+            }
+          ],
+          "abilities": []
+        },
+        {
+          "circle": 2,
+          "disciplineTalents": [
+            {
+              "ref": "animal-training",
+              "name": "Animal Training"
+            }
+          ],
+          "abilities": [
+            {
+              "type": "defense",
+              "name": "Defense",
+              "text": "The adept adds +1 to his Physical Defense.",
+              "defense": "physical",
+              "bonus": 1
+            }
+          ]
+        },
+        {
+          "circle": 3,
+          "disciplineTalents": [
+            {
+              "ref": "enhance-animal-companion",
+              "name": "Enhance Animal Companion"
+            }
+          ],
+          "abilities": [
+            {
+              "type": "karma",
+              "name": "Karma",
+              "text": "The adept may spend a Karma Point on Attack tests made while charging."
+            }
+          ]
+        },
+        {
+          "circle": 4,
+          "disciplineTalents": [
+            {
+              "ref": "call-animal-companion",
+              "name": "Call Animal Companion"
+            }
+          ],
+          "abilities": [
+            {
+              "type": "defense",
+              "name": "Defense",
+              "text": "The adept adds +1 to his Social Defense.",
+              "defense": "social",
+              "bonus": 1
+            }
+          ]
+        },
+        {
+          "circle": 5,
+          "disciplineTalents": [
+            {
+              "ref": "armor-mount",
+              "name": "Armor Mount"
+            }
+          ],
+          "abilities": [
+            {
+              "type": "one-soul,-two-bodies",
+              "name": "One Soul, Two Bodies",
+              "text": "The adept gains a +2 bonus to any non-combat test involving his connection to his favored mount. For example, Animal Bond, Animal Training, and Blood Share would get the bonus, but Trick Riding in combat would not."
+            },
+            {
+              "type": "karma",
+              "name": "Karma",
+              "text": "The adept may spend a Karma Point on any Damage tests made while mounted."
+            }
+          ]
+        },
+        {
+          "circle": 6,
+          "disciplineTalents": [
+            {
+              "ref": "wheeling-attack",
+              "name": "Wheeling Attack"
+            }
+          ],
+          "abilities": [
+            {
+              "type": "defense",
+              "name": "Defense",
+              "text": "The adept adds +2 to his Physical Defense.",
+              "defense": "physical",
+              "bonus": 2
+            }
+          ]
+        },
+        {
+          "circle": 7,
+          "disciplineTalents": [
+            {
+              "ref": "wheeling-defense",
+              "name": "Wheeling Defense"
+            }
+          ],
+          "abilities": [
+            {
+              "type": "recovery",
+              "name": "Recovery",
+              "text": "The adept gains an additional Recovery test.",
+              "bonus": 1
+            }
+          ]
+        },
+        {
+          "circle": 8,
+          "disciplineTalents": [
+            {
+              "ref": "double-charge",
+              "name": "Double-Charge"
+            }
+          ],
+          "abilities": [
+            {
+              "type": "defense",
+              "name": "Defense",
+              "text": "The adept adds +3 to his Physical Defense.",
+              "defense": "physical",
+              "bonus": 3
+            }
+          ]
+        }
+      ],
+      "durability": 7
+    },
+    {
+      "id": "elementalist",
+      "name": "Elementalist",
+      "description": "An Elementalist is a magician who focuses on learning about, and gaining power over, the five magical elements: air, earth, fire, water, and wood.",
+      "importantAttributes": [
+        "PER",
+        "WIL"
+      ],
+      "karmaRitual": "The Elementalist draws a large triangle on the ground. The Elementalist sits in the triangle and boils a pot of water, singing to the fire to encourage its heat. Then the Elementalist extinguishes the fire and adds earth to the water, turning it into hot mud. After letting it cool for a few minutes, the Elementalist covers his face with the mud like war paint, and sings to the wind, calling a small breeze. As the wind dries the mud, much of it cracks and blows away, leaving behind a series of intricate, swirling patterns. The Karma ritual is then complete.",
+      "artisanSkills": [
+        "Robe Embroidery",
+        "Sculpting"
+      ],
+      "halfMagic": "Elementalists use half-magic for knowledge of nature, the elements, uses of elemental magic, and other magical rituals. The Elementalist may make a Perception-based Half-Magic test to detect the presence of elemental spirits within 30 yards. The Difficulty Number for sensing an elemental spirit is the spirit's Mystic Defense. If the test succeeds, the character can sense the presence of the elemental spirit and can use spells, or talents such as Elemental Tongues and Elemental Hold, to communicate and interact with it. The gamemaster may choose to make this Half-Magic Test on behalf of an Elementalist character at any time, as this innate sense is always active.",
+      "talentOptions": {
+        "Novice": [
+          {
+            "ref": "air-speaking",
+            "name": "Air Speaking"
+          },
+          {
+            "ref": "arcane-mutterings",
+            "name": "Arcane Mutterings"
+          },
+          {
+            "ref": "astral-sight",
+            "name": "Astral Sight"
+          },
+          {
+            "ref": "avoid-blow",
+            "name": "Avoid Blow"
+          },
+          {
+            "ref": "climbing",
+            "name": "Climbing"
+          },
+          {
+            "ref": "item-history",
+            "name": "Item History"
+          },
+          {
+            "ref": "standard-matrix",
+            "name": "Standard Matrix"
+          },
+          {
+            "ref": "tracking",
+            "name": "Tracking"
+          },
+          {
+            "ref": "wilderness-survival",
+            "name": "Wilderness Survival"
+          },
+          {
+            "ref": "wind-catcher",
+            "name": "Wind Catcher"
+          }
+        ],
+        "Journeyman": [
+          {
+            "ref": "banish",
+            "name": "Banish"
+          },
+          {
+            "ref": "cold-purify",
+            "name": "Cold Purify"
+          },
+          {
+            "ref": "dispel-magic",
+            "name": "Dispel Magic"
+          },
+          {
+            "ref": "enhanced-matrix",
+            "name": "Enhanced Matrix"
+          },
+          {
+            "ref": "fireblood",
+            "name": "Fireblood"
+          },
+          {
+            "ref": "gliding-stride",
+            "name": "Gliding Stride"
+          },
+          {
+            "ref": "navigation",
+            "name": "Navigation"
+          },
+          {
+            "ref": "safe-path",
+            "name": "Safe Path"
+          },
+          {
+            "ref": "steel-thought",
+            "name": "Steel Thought"
+          },
+          {
+            "ref": "tenacious-weave",
+            "name": "Tenacious Weave"
+          }
+        ]
+      },
+      "circles": [
+        {
+          "circle": 1,
+          "disciplineTalents": [
+            {
+              "ref": "awareness",
+              "name": "Awareness"
+            },
+            {
+              "ref": "patterncraft",
+              "name": "Patterncraft"
+            },
+            {
+              "ref": "spellcasting",
+              "name": "Spellcasting"
+            },
+            {
+              "ref": "thread-weaving",
+              "name": "Thread Weaving",
+              "variant": "Elementalism"
+            },
+            {
+              "ref": "wood-skin",
+              "name": "Wood Skin"
+            }
+          ],
+          "abilities": [],
+          "freeTalents": [
+            {
+              "ref": "standard-matrix",
+              "name": "Standard Matrix"
+            },
+            {
+              "ref": "standard-matrix",
+              "name": "Standard Matrix"
+            }
+          ]
+        },
+        {
+          "circle": 2,
+          "disciplineTalents": [
+            {
+              "ref": "fire-heal",
+              "name": "Fire Heal"
+            }
+          ],
+          "abilities": [
+            {
+              "type": "defense",
+              "name": "Defense",
+              "text": "The adept adds +1 to his Mystic Defense.",
+              "defense": "mystic",
+              "bonus": 1
+            }
+          ]
+        },
+        {
+          "circle": 3,
+          "disciplineTalents": [
+            {
+              "ref": "elemental-tongues",
+              "name": "Elemental Tongues"
+            }
+          ],
+          "abilities": [
+            {
+              "type": "karma",
+              "name": "Karma",
+              "text": "The adept may spend a Karma Point on Recovery tests."
+            }
+          ]
+        },
+        {
+          "circle": 4,
+          "disciplineTalents": [
+            {
+              "ref": "elemental-hold",
+              "name": "Elemental Hold"
+            }
+          ],
+          "abilities": [
+            {
+              "type": "defense",
+              "name": "Defense",
+              "text": "The adept adds +1 to his Physical Defense.",
+              "defense": "physical",
+              "bonus": 1
+            }
+          ]
+        },
+        {
+          "circle": 5,
+          "disciplineTalents": [
+            {
+              "ref": "summon",
+              "name": "Summon",
+              "variant": "Elemental Spirits"
+            }
+          ],
+          "abilities": [
+            {
+              "type": "free-talent",
+              "name": "Free Talent",
+              "text": "One of the adept's free Standard Matrix talents is upgraded to an Enhanced Matrix."
+            },
+            {
+              "type": "fire-and-ice",
+              "name": "Fire and Ice",
+              "text": "For 1 Strain the adept may do one of the following as a Standard action with a successful Elementalism Test against the higher of the target's Mystic Defense or a Difficulty Number of 6: 1. Create a small flame between his thumb and forefinger. This fire lasts for only one round, but is intense enough to light a torch. If used in combat, it inflicts Step 4/ D6 fire damage (Physical Armor provides protection). 2. Freeze water by touching it with his middle three fingers. The adept can freeze up to one quart of water from each use of this ability. If used in combat, it inflicts Step 4/D6 cold damage (Physical Armor provides protection)."
+            },
+            {
+              "type": "karma",
+              "name": "Karma",
+              "text": "The adept may spend a Karma Point to target an additional ally with a spell he is casting."
+            }
+          ]
+        },
+        {
+          "circle": 6,
+          "disciplineTalents": [
+            {
+              "ref": "willforce",
+              "name": "Willforce"
+            }
+          ],
+          "abilities": [
+            {
+              "type": "defense",
+              "name": "Defense",
+              "text": "The adept adds +2 to his Mystic Defense.",
+              "defense": "mystic",
+              "bonus": 2
+            }
+          ]
+        },
+        {
+          "circle": 7,
+          "disciplineTalents": [
+            {
+              "ref": "earth-skin",
+              "name": "Earth Skin"
+            }
+          ],
+          "abilities": [
+            {
+              "type": "recovery",
+              "name": "Recovery",
+              "text": "The adept gains an additional Recovery test.",
+              "bonus": 1
+            }
+          ]
+        },
+        {
+          "circle": 8,
+          "disciplineTalents": [
+            {
+              "ref": "hold-thread",
+              "name": "Hold Thread"
+            }
+          ],
+          "abilities": [
+            {
+              "type": "defense",
+              "name": "Defense",
+              "text": "The adept adds +3 to his Mystic Defense.",
+              "defense": "mystic",
+              "bonus": 3
+            }
+          ]
+        }
+      ],
+      "durability": 3
+    },
+    {
+      "id": "illusionist",
+      "name": "Illusionist",
+      "description": "Illusionists cast spells that work through deception. However, some Illusionist spells do have real effects; Illusionists learned long ago that if everything they did was an illusion, people quickly caught on and their magic became less effective. Now they balance real magic, illusions, trickery, and sleight of hand.",
+      "importantAttributes": [
+        "PER",
+        "WIL",
+        "CHA"
+      ],
+      "karmaRitual": "The Illusionist does not use the same ritual each time. His Karma ritual does require him to incorporate certain elements every time, however: showy spells, tricks or snappy banter, and an assistant. Other than that, the Illusionist makes up his ritual on the spot. The Illusionist must do his best during this time to convince his assistant that the ritual is very serious and must conform to a precise formula.",
+      "artisanSkills": [
+        "Acting",
+        "Robe Embroidery"
+      ],
+      "halfMagic": "Illusionists make Half-Magic tests to recognize different types of magic use, as well as specific uses of illusion magic. They also make Half-Magic tests when attempting to perceive the \"truth\" of a given situation.",
+      "talentOptions": {
+        "Novice": [
+          {
+            "ref": "arcane-mutterings",
+            "name": "Arcane Mutterings"
+          },
+          {
+            "ref": "astral-sight",
+            "name": "Astral Sight"
+          },
+          {
+            "ref": "awareness",
+            "name": "Awareness"
+          },
+          {
+            "ref": "dead-fall",
+            "name": "Dead Fall"
+          },
+          {
+            "ref": "mimic-voice",
+            "name": "Mimic Voice"
+          },
+          {
+            "ref": "speak-language",
+            "name": "Speak Language"
+          },
+          {
+            "ref": "standard-matrix",
+            "name": "Standard Matrix"
+          },
+          {
+            "ref": "stealthy-stride",
+            "name": "Stealthy Stride"
+          },
+          {
+            "ref": "taunt",
+            "name": "Taunt"
+          },
+          {
+            "ref": "winning-smile",
+            "name": "Winning Smile"
+          }
+        ],
+        "Journeyman": [
+          {
+            "ref": "conceal-object",
+            "name": "Conceal Object"
+          },
+          {
+            "ref": "dispel-magic",
+            "name": "Dispel Magic"
+          },
+          {
+            "ref": "engaging-banter",
+            "name": "Engaging Banter"
+          },
+          {
+            "ref": "enhanced-matrix",
+            "name": "Enhanced Matrix"
+          },
+          {
+            "ref": "fast-hand",
+            "name": "Fast Hand"
+          },
+          {
+            "ref": "frighten",
+            "name": "Frighten"
+          },
+          {
+            "ref": "resist-taunt",
+            "name": "Resist Taunt"
+          },
+          {
+            "ref": "slough-blame",
+            "name": "Slough Blame"
+          },
+          {
+            "ref": "steel-thought",
+            "name": "Steel Thought"
+          },
+          {
+            "ref": "tenacious-weave",
+            "name": "Tenacious Weave"
+          }
+        ]
+      },
+      "circles": [
+        {
+          "circle": 1,
+          "disciplineTalents": [
+            {
+              "ref": "false-sight",
+              "name": "False Sight"
+            },
+            {
+              "ref": "first-impression",
+              "name": "First Impression"
+            },
+            {
+              "ref": "patterncraft",
+              "name": "Patterncraft"
+            },
+            {
+              "ref": "spellcasting",
+              "name": "Spellcasting"
+            },
+            {
+              "ref": "thread-weaving",
+              "name": "Thread Weaving",
+              "variant": "Illusionism"
+            }
+          ],
+          "abilities": [],
+          "freeTalents": [
+            {
+              "ref": "standard-matrix",
+              "name": "Standard Matrix"
+            },
+            {
+              "ref": "standard-matrix",
+              "name": "Standard Matrix"
+            }
+          ]
+        },
+        {
+          "circle": 2,
+          "disciplineTalents": [
+            {
+              "ref": "true-sight",
+              "name": "True Sight"
+            }
+          ],
+          "abilities": [
+            {
+              "type": "defense",
+              "name": "Defense",
+              "text": "The adept adds +1 to his Mystic Defense.",
+              "defense": "mystic",
+              "bonus": 1
+            }
+          ]
+        },
+        {
+          "circle": 3,
+          "disciplineTalents": [
+            {
+              "ref": "conversation",
+              "name": "Conversation"
+            }
+          ],
+          "abilities": [
+            {
+              "type": "karma",
+              "name": "Karma",
+              "text": "The adept may spend a Karma Point on Interaction tests."
+            }
+          ]
+        },
+        {
+          "circle": 4,
+          "disciplineTalents": [
+            {
+              "ref": "disguise-self",
+              "name": "Disguise Self"
+            }
+          ],
+          "abilities": [
+            {
+              "type": "defense",
+              "name": "Defense",
+              "text": "The adept adds +1 to his Social Defense.",
+              "defense": "social",
+              "bonus": 1
+            }
+          ]
+        },
+        {
+          "circle": 5,
+          "disciplineTalents": [
+            {
+              "ref": "power-mask",
+              "name": "Power Mask"
+            }
+          ],
+          "abilities": [
+            {
+              "type": "free-talent",
+              "name": "Free Talent",
+              "text": "One of the adept's free Standard Matrix talents is upgraded to an Enhanced Matrix."
+            },
+            {
+              "type": "glamour",
+              "name": "Glamour",
+              "text": "For 2 Strain, the adept creates a clearly illusory scene (no Sensing test necessary) to delight and entertain onlookers as a Standard action. The adept makes an Illusionism test against the highest Social Defense in the crowd. If successful, the adept gains a +2 bonus to Making an Impression tests for a number of hours equal to the successes scored."
+            },
+            {
+              "type": "karma",
+              "name": "Karma",
+              "text": "The adept may spend a Karma Point to add a +2 bonus to a spell's Effect Step. The bonus lasts for the full spell duration, even if the spell has multiple Effect tests."
+            }
+          ]
+        },
+        {
+          "circle": 6,
+          "disciplineTalents": [
+            {
+              "ref": "willforce",
+              "name": "Willforce"
+            }
+          ],
+          "abilities": [
+            {
+              "type": "defense",
+              "name": "Defense",
+              "text": "The adept adds +2 to his Mystic Defense.",
+              "defense": "mystic",
+              "bonus": 2
+            }
+          ]
+        },
+        {
+          "circle": 7,
+          "disciplineTalents": [
+            {
+              "ref": "hypnotize",
+              "name": "Hypnotize"
+            }
+          ],
+          "abilities": [
+            {
+              "type": "initiative",
+              "name": "Initiative",
+              "text": "The adept adds +1 Step to his Initiative.",
+              "bonus": 1
+            }
+          ]
+        },
+        {
+          "circle": 8,
+          "disciplineTalents": [
+            {
+              "ref": "hold-thread",
+              "name": "Hold Thread"
+            }
+          ],
+          "abilities": [
+            {
+              "type": "defense",
+              "name": "Defense",
+              "text": "The adept adds +3 to his Mystic Defense.",
+              "defense": "mystic",
+              "bonus": 3
+            }
+          ]
+        }
+      ],
+      "durability": 3
+    },
+    {
+      "id": "nethermancer",
+      "name": "Nethermancer",
+      "description": "Nethermancers are spellcasters who specialize in the magic of the netherworlds. Their interests focus on other planes, and the spirits and creatures that inhabit those planes. Most people consider Nethermancers to be a little \"off\" in an eerie sort of way, and consequently followers of this Discipline are unlikely to win many popularity contests.",
+      "importantAttributes": [
+        "PER",
+        "WIL",
+        "CHA"
+      ],
+      "karmaRitual": "The Nethermancer drinks tea with a spirit servant or other otherworldly creature and talks of life beyond this world. The ritual ends after a half hour has passed with the Nethermancer draining the last drop from his final cup of tea.",
+      "artisanSkills": [
+        "Bone Carving",
+        "Robe Embroidery"
+      ],
+      "halfMagic": "Nethermancers use half-magic to recognize uses of nethermantic magic, different types of undead and spirits, and magical rituals—especially blood magic rituals. Nethermancers may also use half-magic to understand the effects of different blood charms, as these are linked with Nethermancy. A Nethermancer may use half-magic to sense the presence of spirits within 30 yards of his location. The Detection Difficulty for sensing a spirit is the spirit's Mystic Defense (determined by the gamemaster). If the test succeeds, the Nethermancer can sense the presence of the spirit and use spells, or talents such as Spirit Hold or Spirit Talk, to communicate and interact with the spirit. The gamemaster may choose to make this Half-Magic test on behalf of a Nethermancer character at any time, as this innate sense is always active.",
+      "talentOptions": {
+        "Novice": [
+          {
+            "ref": "arcane-mutterings",
+            "name": "Arcane Mutterings"
+          },
+          {
+            "ref": "avoid-blow",
+            "name": "Avoid Blow"
+          },
+          {
+            "ref": "awareness",
+            "name": "Awareness"
+          },
+          {
+            "ref": "command-nightflyer",
+            "name": "Command Nightflyer"
+          },
+          {
+            "ref": "dispel-magic",
+            "name": "Dispel Magic"
+          },
+          {
+            "ref": "read-and-write-language",
+            "name": "Read and Write Language"
+          },
+          {
+            "ref": "speak-language",
+            "name": "Speak Language"
+          },
+          {
+            "ref": "standard-matrix",
+            "name": "Standard Matrix"
+          },
+          {
+            "ref": "stealthy-stride",
+            "name": "Stealthy Stride"
+          },
+          {
+            "ref": "suppress-curse",
+            "name": "Suppress Curse"
+          }
+        ],
+        "Journeyman": [
+          {
+            "ref": "astral-interference",
+            "name": "Astral Interference"
+          },
+          {
+            "ref": "banish",
+            "name": "Banish"
+          },
+          {
+            "ref": "blood-share",
+            "name": "Blood Share"
+          },
+          {
+            "ref": "enhanced-matrix",
+            "name": "Enhanced Matrix"
+          },
+          {
+            "ref": "lifesight",
+            "name": "Lifesight"
+          },
+          {
+            "ref": "lion-heart",
+            "name": "Lion Heart"
+          },
+          {
+            "ref": "research",
+            "name": "Research"
+          },
+          {
+            "ref": "spirit-mount",
+            "name": "Spirit Mount"
+          },
+          {
+            "ref": "steely-stare",
+            "name": "Steely Stare"
+          },
+          {
+            "ref": "tenacious-weave",
+            "name": "Tenacious Weave"
+          }
+        ]
+      },
+      "circles": [
+        {
+          "circle": 1,
+          "disciplineTalents": [
+            {
+              "ref": "astral-sight",
+              "name": "Astral Sight"
+            },
+            {
+              "ref": "frighten",
+              "name": "Frighten"
+            },
+            {
+              "ref": "patterncraft",
+              "name": "Patterncraft"
+            },
+            {
+              "ref": "spellcasting",
+              "name": "Spellcasting"
+            },
+            {
+              "ref": "thread-weaving",
+              "name": "Thread Weaving",
+              "variant": "Nethermancy"
+            }
+          ],
+          "abilities": [],
+          "freeTalents": [
+            {
+              "ref": "standard-matrix",
+              "name": "Standard Matrix"
+            },
+            {
+              "ref": "standard-matrix",
+              "name": "Standard Matrix"
+            }
+          ]
+        },
+        {
+          "circle": 2,
+          "disciplineTalents": [
+            {
+              "ref": "steel-thought",
+              "name": "Steel Thought"
+            }
+          ],
+          "abilities": [
+            {
+              "type": "defense",
+              "name": "Defense",
+              "text": "The adept adds +1 to his Mystic Defense.",
+              "defense": "mystic",
+              "bonus": 1
+            }
+          ]
+        },
+        {
+          "circle": 3,
+          "disciplineTalents": [
+            {
+              "ref": "spirit-talk",
+              "name": "Spirit Talk"
+            }
+          ],
+          "abilities": [
+            {
+              "type": "karma",
+              "name": "Karma",
+              "text": "The adept may spend a Karma Point once per round on any test against a Horror, Horror Construct, or undead target."
+            }
+          ]
+        },
+        {
+          "circle": 4,
+          "disciplineTalents": [
+            {
+              "ref": "spirit-hold",
+              "name": "Spirit Hold"
+            }
+          ],
+          "abilities": [
+            {
+              "type": "defense",
+              "name": "Defense",
+              "text": "The adept adds +1 to his Social Defense.",
+              "defense": "social",
+              "bonus": 1
+            }
+          ]
+        },
+        {
+          "circle": 5,
+          "disciplineTalents": [
+            {
+              "ref": "summon",
+              "name": "Summon",
+              "variant": "Ally Spirits"
+            }
+          ],
+          "abilities": [
+            {
+              "type": "free-talent",
+              "name": "Free Talent",
+              "text": "One of the adept's free Standard Matrix talents is upgraded to an Enhanced Matrix."
+            },
+            {
+              "type": "blood-summon",
+              "name": "Blood Summon",
+              "text": "The adept may take Blood Magic Damage equal to the Strength rating of a spirit being summoned to gain an extra success on a Summon test. This damage may only be healed a full day after the spirit has left the summoner's service."
+            },
+            {
+              "type": "karma",
+              "name": "Karma",
+              "text": "The adept may spend a Karma Point to increase the target's penalty from a spell he is casting by 2."
+            }
+          ]
+        },
+        {
+          "circle": 6,
+          "disciplineTalents": [
+            {
+              "ref": "willforce",
+              "name": "Willforce"
+            }
+          ],
+          "abilities": [
+            {
+              "type": "defense",
+              "name": "Defense",
+              "text": "The adept adds +2 to his Mystic Defense.",
+              "defense": "mystic",
+              "bonus": 2
+            }
+          ]
+        },
+        {
+          "circle": 7,
+          "disciplineTalents": [
+            {
+              "ref": "orbiting-spy",
+              "name": "Orbiting Spy"
+            }
+          ],
+          "abilities": [
+            {
+              "type": "mystic-armor",
+              "name": "Mystic Armor",
+              "text": "The adept adds +1 to his Mystic Armor.",
+              "bonus": 1
+            }
+          ]
+        },
+        {
+          "circle": 8,
+          "disciplineTalents": [
+            {
+              "ref": "hold-thread",
+              "name": "Hold Thread"
+            }
+          ],
+          "abilities": [
+            {
+              "type": "defense",
+              "name": "Defense",
+              "text": "The adept adds +3 to his Mystic Defense.",
+              "defense": "mystic",
+              "bonus": 3
+            }
+          ]
+        }
+      ],
+      "durability": 3
+    },
+    {
+      "id": "scout",
+      "name": "Scout",
+      "description": "Scouts are the vanguard, the tracker, and the brave rangers who go where others cannot. Scouts are masters of becoming one with their environment—whether that environment is a primeval forest or the heart of the city.",
+      "importantAttributes": [
+        "DEX",
+        "PER"
+      ],
+      "karmaRitual": "The Scout allows his companions to lead him blindfolded, about ten minutes walk from his starting point. The Scout meditates for ten minutes as he visualizes the route back to where he began, then makes the journey, still blindfolded, to his starting point. Removing the blindfold, the half-hour-long ritual is complete.",
+      "artisanSkills": [
+        "Rune Carving",
+        "Wood Carving"
+      ],
+      "halfMagic": "A Scout may use half-magic to recognize tracks and trails left by different types of animals and Namegivers, know about the plants and creatures native to a region, even general information on the different cultures across Barsaive.",
+      "talentOptions": {
+        "Novice": [
+          {
+            "ref": "anticipate-blow",
+            "name": "Anticipate Blow"
+          },
+          {
+            "ref": "avoid-blow",
+            "name": "Avoid Blow"
+          },
+          {
+            "ref": "creature-analysis",
+            "name": "Creature Analysis"
+          },
+          {
+            "ref": "disarm-trap",
+            "name": "Disarm Trap"
+          },
+          {
+            "ref": "great-leap",
+            "name": "Great Leap"
+          },
+          {
+            "ref": "lock-picking",
+            "name": "Lock Picking"
+          },
+          {
+            "ref": "melee-weapons",
+            "name": "Melee Weapons"
+          },
+          {
+            "ref": "missile-weapons",
+            "name": "Missile Weapons"
+          },
+          {
+            "ref": "read-and-write-language",
+            "name": "Read and Write Language"
+          },
+          {
+            "ref": "speak-language",
+            "name": "Speak Language"
+          }
+        ],
+        "Journeyman": [
+          {
+            "ref": "animal-bond",
+            "name": "Animal Bond"
+          },
+          {
+            "ref": "borrow-sense",
+            "name": "Borrow Sense"
+          },
+          {
+            "ref": "conceal-object",
+            "name": "Conceal Object"
+          },
+          {
+            "ref": "disguise-self",
+            "name": "Disguise Self"
+          },
+          {
+            "ref": "spirit-mount",
+            "name": "Spirit Mount"
+          },
+          {
+            "ref": "spot-armor-flaw",
+            "name": "Spot Armor Flaw"
+          },
+          {
+            "ref": "sprint",
+            "name": "Sprint"
+          },
+          {
+            "ref": "surprise-strike",
+            "name": "Surprise Strike"
+          },
+          {
+            "ref": "tiger-spring",
+            "name": "Tiger Spring"
+          },
+          {
+            "ref": "true-sight",
+            "name": "True Sight"
+          }
+        ]
+      },
+      "circles": [
+        {
+          "circle": 1,
+          "disciplineTalents": [
+            {
+              "ref": "awareness",
+              "name": "Awareness"
+            },
+            {
+              "ref": "climbing",
+              "name": "Climbing"
+            },
+            {
+              "ref": "thread-weaving",
+              "name": "Thread Weaving",
+              "variant": "Scout Weaving"
+            },
+            {
+              "ref": "tracking",
+              "name": "Tracking"
+            },
+            {
+              "ref": "wilderness-survival",
+              "name": "Wilderness Survival"
+            }
+          ],
+          "abilities": [
+            {
+              "type": "karma",
+              "name": "Karma",
+              "text": "The adept may spend a Karma Point on tests made to find something"
+            }
+          ],
+          "freeTalents": [
+            {
+              "ref": "navigation",
+              "name": "Navigation"
+            }
+          ]
+        },
+        {
+          "circle": 2,
+          "disciplineTalents": [
+            {
+              "ref": "stealthy-stride",
+              "name": "Stealthy Stride"
+            }
+          ],
+          "abilities": [
+            {
+              "type": "defense",
+              "name": "Defense",
+              "text": "The adept adds +1 to his Physical Defense.",
+              "defense": "physical",
+              "bonus": 1
+            }
+          ]
+        },
+        {
+          "circle": 3,
+          "disciplineTalents": [
+            {
+              "ref": "mystic-pursuit",
+              "name": "Mystic Pursuit"
+            }
+          ],
+          "abilities": [
+            {
+              "type": "karma",
+              "name": "Karma",
+              "text": "The adept may spend a Karma Point on Initiative tests."
+            }
+          ]
+        },
+        {
+          "circle": 4,
+          "disciplineTalents": [
+            {
+              "ref": "danger-sense",
+              "name": "Danger Sense"
+            }
+          ],
+          "abilities": [
+            {
+              "type": "defense",
+              "name": "Defense",
+              "text": "The adept adds +1 to his Mystic Defense.",
+              "defense": "mystic",
+              "bonus": 1
+            }
+          ]
+        },
+        {
+          "circle": 5,
+          "disciplineTalents": [
+            {
+              "ref": "evidence-analysis",
+              "name": "Evidence Analysis"
+            }
+          ],
+          "abilities": [
+            {
+              "type": "enhanced-senses",
+              "name": "Enhanced Senses",
+              "text": "For 1 Strain, the adept enhances one of his natural senses as a Simple action and gains a +2 bonus to Perception tests based on the sense for 1 round. If that sense is unhindered, you may ignore Blindness penalties by using your enhanced sense as your primary sense."
+            },
+            {
+              "type": "karma",
+              "name": "Karma",
+              "text": "The adept may spend a Karma Point on Recovery tests."
+            }
+          ]
+        },
+        {
+          "circle": 6,
+          "disciplineTalents": [
+            {
+              "ref": "astral-sight",
+              "name": "Astral Sight"
+            }
+          ],
+          "abilities": [
+            {
+              "type": "defense",
+              "name": "Defense",
+              "text": "The adept adds +2 to his Physical Defense.",
+              "defense": "physical",
+              "bonus": 2
+            }
+          ]
+        },
+        {
+          "circle": 7,
+          "disciplineTalents": [
+            {
+              "ref": "safe-path",
+              "name": "Safe Path"
+            }
+          ],
+          "abilities": [
+            {
+              "type": "initiative",
+              "name": "Initiative",
+              "text": "The adept adds +1 Step to his Initiative.",
+              "bonus": 1
+            }
+          ]
+        },
+        {
+          "circle": 8,
+          "disciplineTalents": [
+            {
+              "ref": "orbiting-spy",
+              "name": "Orbiting Spy"
+            }
+          ],
+          "abilities": [
+            {
+              "type": "defense",
+              "name": "Defense",
+              "text": "The adept adds +3 to his Physical Defense.",
+              "defense": "physical",
+              "bonus": 3
+            }
+          ]
+        }
+      ],
+      "durability": 5
+    },
+    {
+      "id": "sky-raider",
+      "name": "Sky Raider",
+      "description": "Sky Raiders are ruthless pirates forming a potent force in Barsaive. Their airships raid all over the province, targeting merchant caravans as well as smaller towns and villages. Sky Raiders are proud, and show great loyalty to other Sky Raiders—unless that raider belongs to an enemy clan or moot.",
+      "importantAttributes": [
+        "DEX",
+        "STR",
+        "CHA"
+      ],
+      "karmaRitual": "The Sky Raider spends several minutes in silent meditation beneath the open sky. Then he begins to strike his shield with a weapon, slowly at first. The striking accelerates until the Sky Raider is beating his shield at a furious rate. Just before the ritual ends, the Sky Raider stops, continuing to meditate while his shield still resonates from the furious bashing. The ritual ends when the echoes from the last drumbeat fade.",
+      "artisanSkills": [
+        "Painting",
+        "Wood Carving"
+      ],
+      "halfMagic": "Sky Raiders use half-magic for tasks related to the upkeep, repair, and building of smaller airships (like the drakkar), knowledge of different airship designs and crew complements, as well as knowledge of commonly followed flight paths.",
+      "talentOptions": {
+        "Novice": [
+          {
+            "ref": "air-sailing",
+            "name": "Air Sailing"
+          },
+          {
+            "ref": "air-speaking",
+            "name": "Air Speaking"
+          },
+          {
+            "ref": "avoid-blow",
+            "name": "Avoid Blow"
+          },
+          {
+            "ref": "danger-sense",
+            "name": "Danger Sense"
+          },
+          {
+            "ref": "navigation",
+            "name": "Navigation"
+          },
+          {
+            "ref": "shield-bash",
+            "name": "Shield Bash"
+          },
+          {
+            "ref": "throwing-weapons",
+            "name": "Throwing Weapons"
+          },
+          {
+            "ref": "unarmed-combat",
+            "name": "Unarmed Combat"
+          },
+          {
+            "ref": "wilderness-survival",
+            "name": "Wilderness Survival"
+          },
+          {
+            "ref": "wind-catcher",
+            "name": "Wind Catcher"
+          }
+        ],
+        "Journeyman": [
+          {
+            "ref": "distract",
+            "name": "Distract"
+          },
+          {
+            "ref": "first-impression",
+            "name": "First Impression"
+          },
+          {
+            "ref": "iron-constitution",
+            "name": "Iron Constitution"
+          },
+          {
+            "ref": "leadership",
+            "name": "Leadership"
+          },
+          {
+            "ref": "lion-heart",
+            "name": "Lion Heart"
+          },
+          {
+            "ref": "second-weapon",
+            "name": "Second Weapon"
+          },
+          {
+            "ref": "sprint",
+            "name": "Sprint"
+          },
+          {
+            "ref": "swift-kick",
+            "name": "Swift Kick"
+          },
+          {
+            "ref": "tactics",
+            "name": "Tactics"
+          },
+          {
+            "ref": "tiger-spring",
+            "name": "Tiger Spring"
+          }
+        ]
+      },
+      "circles": [
+        {
+          "circle": 1,
+          "disciplineTalents": [
+            {
+              "ref": "battle-shout",
+              "name": "Battle Shout"
+            },
+            {
+              "ref": "climbing",
+              "name": "Climbing"
+            },
+            {
+              "ref": "fireblood",
+              "name": "Fireblood"
+            },
+            {
+              "ref": "melee-weapons",
+              "name": "Melee Weapons"
+            },
+            {
+              "ref": "thread-weaving",
+              "name": "Thread Weaving",
+              "variant": "Sky Weaving"
+            }
+          ],
+          "abilities": []
+        },
+        {
+          "circle": 2,
+          "disciplineTalents": [
+            {
+              "ref": "great-leap",
+              "name": "Great Leap"
+            }
+          ],
+          "abilities": [
+            {
+              "type": "defense",
+              "name": "Defense",
+              "text": "The adept adds +1 to his Physical Defense.",
+              "defense": "physical",
+              "bonus": 1
+            }
+          ]
+        },
+        {
+          "circle": 3,
+          "disciplineTalents": [
+            {
+              "ref": "wound-balance",
+              "name": "Wound Balance"
+            }
+          ],
+          "abilities": [
+            {
+              "type": "karma",
+              "name": "Karma",
+              "text": "The adept may spend a Karma Point on Recovery tests."
+            }
+          ]
+        },
+        {
+          "circle": 4,
+          "disciplineTalents": [
+            {
+              "ref": "fire-heal",
+              "name": "Fire Heal"
+            }
+          ],
+          "abilities": [
+            {
+              "type": "defense",
+              "name": "Defense",
+              "text": "The adept adds +1 to his Social Defense.",
+              "defense": "social",
+              "bonus": 1
+            }
+          ]
+        },
+        {
+          "circle": 5,
+          "disciplineTalents": [
+            {
+              "ref": "battle-bellow",
+              "name": "Battle Bellow"
+            }
+          ],
+          "abilities": [
+            {
+              "type": "overwhelming-force",
+              "name": "Overwhelming Force",
+              "text": "The adept no longer takes Strain when using the Aggressive Attack Combat Option. If another effect grants them the same bonus, the adept instead reduces the penalties by 1."
+            },
+            {
+              "type": "karma",
+              "name": "Karma",
+              "text": "The adept may spend a Karma Point on Damage tests made with melee or throwing weapons at or above the character's one-handed Size limit."
+            }
+          ]
+        },
+        {
+          "circle": 6,
+          "disciplineTalents": [
+            {
+              "ref": "steely-stare",
+              "name": "Steely Stare"
+            }
+          ],
+          "abilities": [
+            {
+              "type": "defense",
+              "name": "Defense",
+              "text": "The adept adds +2 to his Physical Defense.",
+              "defense": "physical",
+              "bonus": 2
+            }
+          ]
+        },
+        {
+          "circle": 7,
+          "disciplineTalents": [
+            {
+              "ref": "down-strike",
+              "name": "Down Strike"
+            }
+          ],
+          "abilities": [
+            {
+              "type": "recovery",
+              "name": "Recovery",
+              "text": "The adept gains an additional Recovery test.",
+              "bonus": 1
+            }
+          ]
+        },
+        {
+          "circle": 8,
+          "disciplineTalents": [
+            {
+              "ref": "momentum-attack",
+              "name": "Momentum Attack"
+            }
+          ],
+          "abilities": [
+            {
+              "type": "defense",
+              "name": "Defense",
+              "text": "The adept adds +3 to his Physical Defense.",
+              "defense": "physical",
+              "bonus": 3
+            }
+          ]
+        }
+      ],
+      "durability": 7
+    },
+    {
+      "id": "swordmaster",
+      "name": "Swordmaster",
+      "description": "Swordmasters are fighters who learn the value of a well-handled weapon, training to demonstrate quickness, flash, and panache in a fight. Swordmasters often emphasize style as much as skill in combat. While swords are the most common weapon employed by this Discipline, some schools focus on and train with other weapons.",
+      "importantAttributes": [
+        "DEX",
+        "CHA"
+      ],
+      "karmaRitual": "The Swordmaster fences against imaginary opponents. He fights the first few bouts as silent, simple exercises. Over the next half hour, the Swordmaster provides sound effects, performs acrobatic moves, and even engages in swashbuckling dialog. The ritual is completed when the last foe falls.",
+      "artisanSkills": [
+        "Acting",
+        "Dancing"
+      ],
+      "halfMagic": "Swordmasters use half-magic to care for their weapons, know the history of legendary weapons, and recognize different types of melee weapons. Swordmasters may also use half-magic to identify another Swordmaster's fighting techniques, including which prominent Swordmasters may have shaped the individual's style.",
+      "talentOptions": {
+        "Novice": [
+          {
+            "ref": "acrobatic-defense",
+            "name": "Acrobatic Defense"
+          },
+          {
+            "ref": "anticipate-blow",
+            "name": "Anticipate Blow"
+          },
+          {
+            "ref": "danger-sense",
+            "name": "Danger Sense"
+          },
+          {
+            "ref": "distract",
+            "name": "Distract"
+          },
+          {
+            "ref": "impressive-display",
+            "name": "Impressive Display"
+          },
+          {
+            "ref": "speak-language",
+            "name": "Speak Language"
+          },
+          {
+            "ref": "tiger-spring",
+            "name": "Tiger Spring"
+          },
+          {
+            "ref": "unarmed-combat",
+            "name": "Unarmed Combat"
+          },
+          {
+            "ref": "winning-smile",
+            "name": "Winning Smile"
+          },
+          {
+            "ref": "wound-balance",
+            "name": "Wound Balance"
+          }
+        ],
+        "Journeyman": [
+          {
+            "ref": "cobra-strike",
+            "name": "Cobra Strike"
+          },
+          {
+            "ref": "engaging-banter",
+            "name": "Engaging Banter"
+          },
+          {
+            "ref": "etiquette",
+            "name": "Etiquette"
+          },
+          {
+            "ref": "gliding-stride",
+            "name": "Gliding Stride"
+          },
+          {
+            "ref": "graceful-exit",
+            "name": "Graceful Exit"
+          },
+          {
+            "ref": "lasting-impression",
+            "name": "Lasting Impression"
+          },
+          {
+            "ref": "lion-heart",
+            "name": "Lion Heart"
+          },
+          {
+            "ref": "spot-armor-flaw",
+            "name": "Spot Armor Flaw"
+          },
+          {
+            "ref": "sprint",
+            "name": "Sprint"
+          },
+          {
+            "ref": "swift-kick",
+            "name": "Swift Kick"
+          }
+        ]
+      },
+      "circles": [
+        {
+          "circle": 1,
+          "disciplineTalents": [
+            {
+              "ref": "avoid-blow",
+              "name": "Avoid Blow"
+            },
+            {
+              "ref": "maneuver",
+              "name": "Maneuver"
+            },
+            {
+              "ref": "melee-weapons",
+              "name": "Melee Weapons"
+            },
+            {
+              "ref": "taunt",
+              "name": "Taunt"
+            },
+            {
+              "ref": "thread-weaving",
+              "name": "Thread Weaving",
+              "variant": "Weapon Weaving"
+            }
+          ],
+          "abilities": []
+        },
+        {
+          "circle": 2,
+          "disciplineTalents": [
+            {
+              "ref": "first-impression",
+              "name": "First Impression"
+            }
+          ],
+          "abilities": [
+            {
+              "type": "defense",
+              "name": "Defense",
+              "text": "The adept adds +1 to his Social Defense.",
+              "defense": "social",
+              "bonus": 1
+            }
+          ]
+        },
+        {
+          "circle": 3,
+          "disciplineTalents": [
+            {
+              "ref": "riposte",
+              "name": "Riposte"
+            }
+          ],
+          "abilities": [
+            {
+              "type": "karma",
+              "name": "Karma",
+              "text": "The adept may spend a Karma Point on Interaction tests."
+            }
+          ]
+        },
+        {
+          "circle": 4,
+          "disciplineTalents": [
+            {
+              "ref": "heartening-laugh",
+              "name": "Heartening Laugh"
+            }
+          ],
+          "abilities": [
+            {
+              "type": "defense",
+              "name": "Defense",
+              "text": "The adept adds +1 to his Physical Defense.",
+              "defense": "physical",
+              "bonus": 1
+            }
+          ]
+        },
+        {
+          "circle": 5,
+          "disciplineTalents": [
+            {
+              "ref": "second-weapon",
+              "name": "Second Weapon"
+            }
+          ],
+          "abilities": [
+            {
+              "type": "size-up",
+              "name": "Size Up",
+              "text": "As a Simple Action, the adept takes 2 Strain, and makes a Weapon Weaving test against an opponent's Mystic Defense. If successful, he may ask one specific question about one of that opponent's traits. This ability works like the Creature Analysis talent (p. 136), but only against Name-giver targets, and only allows one question."
+            },
+            {
+              "type": "karma",
+              "name": "Karma",
+              "text": "The adept may spend a Karma Point on Damage tests made with a melee weapon."
+            }
+          ]
+        },
+        {
+          "circle": 6,
+          "disciplineTalents": [
+            {
+              "ref": "disarm",
+              "name": "Disarm"
+            }
+          ],
+          "abilities": [
+            {
+              "type": "defense",
+              "name": "Defense",
+              "text": "The adept adds +2 to his Social Defense.",
+              "defense": "social",
+              "bonus": 2
+            }
+          ]
+        },
+        {
+          "circle": 7,
+          "disciplineTalents": [
+            {
+              "ref": "resist-taunt",
+              "name": "Resist Taunt"
+            }
+          ],
+          "abilities": [
+            {
+              "type": "initiative",
+              "name": "Initiative",
+              "text": "The adept adds +1 Step to his Initiative.",
+              "bonus": 1
+            }
+          ]
+        },
+        {
+          "circle": 8,
+          "disciplineTalents": [
+            {
+              "ref": "second-attack",
+              "name": "Second Attack"
+            }
+          ],
+          "abilities": [
+            {
+              "type": "defense",
+              "name": "Defense",
+              "text": "The adept adds +2 to his Physical Defense.",
+              "defense": "physical",
+              "bonus": 2
+            }
+          ]
+        }
+      ],
+      "durability": 7
+    },
+    {
+      "id": "thief",
+      "name": "Thief",
+      "description": "Thieves learn early to be self-reliant and how to steal. They draw power from their self-confidence and the knowledge that they depend only on themselves. The abundance of rumors governing Thief guilds means such groups may, in fact, exist, but proof or disproof of their reality remains a secret.",
+      "importantAttributes": [
+        "DEX",
+        "PER",
+        "CHA"
+      ],
+      "karmaRitual": "The Thief sits by himself in a darkened area and concentrates for half an hour on the knowledge that he is alone in the world and can rely, first and foremost, only on himself. With this firmly established in both heart and mind, he sets out to use one of his Discipline talents. The ritual ends as soon as the adept successfully uses the talent.",
+      "artisanSkills": [
+        "Acting",
+        "Poetry"
+      ],
+      "halfMagic": "Thieves may use half-magic to build or bypass security measures intended to prevent theft, and to recognize different types of locking mechanisms.",
+      "talentOptions": {
+        "Novice": [
+          {
+            "ref": "avoid-blow",
+            "name": "Avoid Blow"
+          },
+          {
+            "ref": "climbing",
+            "name": "Climbing"
+          },
+          {
+            "ref": "first-impression",
+            "name": "First Impression"
+          },
+          {
+            "ref": "great-leap",
+            "name": "Great Leap"
+          },
+          {
+            "ref": "melee-weapons",
+            "name": "Melee Weapons"
+          },
+          {
+            "ref": "missile-weapons",
+            "name": "Missile Weapons"
+          },
+          {
+            "ref": "sprint",
+            "name": "Sprint"
+          },
+          {
+            "ref": "surprise-strike",
+            "name": "Surprise Strike"
+          },
+          {
+            "ref": "taunt",
+            "name": "Taunt"
+          },
+          {
+            "ref": "throwing-weapons",
+            "name": "Throwing Weapons"
+          }
+        ],
+        "Journeyman": [
+          {
+            "ref": "blade-juggle",
+            "name": "Blade Juggle"
+          },
+          {
+            "ref": "call-missile",
+            "name": "Call Missile"
+          },
+          {
+            "ref": "dead-fall",
+            "name": "Dead Fall"
+          },
+          {
+            "ref": "disguise-self",
+            "name": "Disguise Self"
+          },
+          {
+            "ref": "graceful-exit",
+            "name": "Graceful Exit"
+          },
+          {
+            "ref": "mimic-voice",
+            "name": "Mimic Voice"
+          },
+          {
+            "ref": "mystic-pursuit",
+            "name": "Mystic Pursuit"
+          },
+          {
+            "ref": "second-weapon",
+            "name": "Second Weapon"
+          },
+          {
+            "ref": "spot-armor-flaw",
+            "name": "Spot Armor Flaw"
+          },
+          {
+            "ref": "true-sight",
+            "name": "True Sight"
+          }
+        ]
+      },
+      "circles": [
+        {
+          "circle": 1,
+          "disciplineTalents": [
+            {
+              "ref": "awareness",
+              "name": "Awareness"
+            },
+            {
+              "ref": "lock-picking",
+              "name": "Lock Picking"
+            },
+            {
+              "ref": "picking-pockets",
+              "name": "Picking Pockets"
+            },
+            {
+              "ref": "stealthy-stride",
+              "name": "Stealthy Stride"
+            },
+            {
+              "ref": "thread-weaving",
+              "name": "Thread Weaving",
+              "variant": "Thief Weaving"
+            }
+          ],
+          "abilities": [
+            {
+              "type": "karma",
+              "name": "Karma",
+              "text": "The adept may spend a Karma Point on any Charisma-based test when the adept is attempting to deceive a target."
+            }
+          ],
+          "freeTalents": [
+            {
+              "ref": "danger-sense",
+              "name": "Danger Sense"
+            }
+          ]
+        },
+        {
+          "circle": 2,
+          "disciplineTalents": [
+            {
+              "ref": "disarm-trap",
+              "name": "Disarm Trap"
+            }
+          ],
+          "abilities": [
+            {
+              "type": "defense",
+              "name": "Defense",
+              "text": "The adept adds +1 to his Physical Defense.",
+              "defense": "physical",
+              "bonus": 1
+            }
+          ]
+        },
+        {
+          "circle": 3,
+          "disciplineTalents": [
+            {
+              "ref": "haggle",
+              "name": "Haggle"
+            }
+          ],
+          "abilities": [
+            {
+              "type": "karma",
+              "name": "Karma",
+              "text": "The adept may spend a Karma Point on Initiative tests."
+            }
+          ]
+        },
+        {
+          "circle": 4,
+          "disciplineTalents": [
+            {
+              "ref": "conceal-object",
+              "name": "Conceal Object"
+            }
+          ],
+          "abilities": [
+            {
+              "type": "defense",
+              "name": "Defense",
+              "text": "The adept adds +1 to his Social Defense.",
+              "defense": "social",
+              "bonus": 1
+            }
+          ]
+        },
+        {
+          "circle": 5,
+          "disciplineTalents": [
+            {
+              "ref": "engaging-banter",
+              "name": "Engaging Banter"
+            }
+          ],
+          "abilities": [
+            {
+              "type": "shadowcloak",
+              "name": "Shadowcloak",
+              "text": "For 2 Strain, the Difficulty Number for any tests made to detect the adept are increased by +2 for a number of minutes equal to the adept's Thief Weaving Rank. This is a Simple Action."
+            },
+            {
+              "type": "karma",
+              "name": "Karma",
+              "text": "The adept may spend a Karma Point on Attack tests against a Surprised or Blindsided opponent."
+            }
+          ]
+        },
+        {
+          "circle": 6,
+          "disciplineTalents": [
+            {
+              "ref": "slough-blame",
+              "name": "Slough Blame"
+            }
+          ],
+          "abilities": [
+            {
+              "type": "defense",
+              "name": "Defense",
+              "text": "The adept adds +2 to his Physical Defense.",
+              "defense": "physical",
+              "bonus": 2
+            }
+          ]
+        },
+        {
+          "circle": 7,
+          "disciplineTalents": [
+            {
+              "ref": "fast-hand",
+              "name": "Fast Hand"
+            }
+          ],
+          "abilities": [
+            {
+              "type": "initiative",
+              "name": "Initiative",
+              "text": "The adept adds +1 Step to his Initiative.",
+              "bonus": 1
+            }
+          ]
+        },
+        {
+          "circle": 8,
+          "disciplineTalents": [
+            {
+              "ref": "false-sight",
+              "name": "False Sight"
+            }
+          ],
+          "abilities": [
+            {
+              "type": "defense",
+              "name": "Defense",
+              "text": "The adept adds +3 to his Physical Defense.",
+              "defense": "physical",
+              "bonus": 3
+            }
+          ]
+        }
+      ],
+      "durability": 5
+    },
+    {
+      "id": "troubadour",
+      "name": "Troubadour",
+      "description": "Troubadours serve as entertainers, storytellers, actors, and songsmiths. As such, they represent the closest thing to a historian or scholar that common people usually see.",
+      "importantAttributes": [
+        "PER",
+        "CHA"
+      ],
+      "karmaRitual": "The Troubadour performs a ballad or skit before an audience of at least two others. He can juggle, joke, tell tall tales, or sing serious legends. Half an hour after he starts, the Troubadour finishes the performance with a short story, ending the tale with the phrase, \"And there it ends, for such is the truth of the thing.\"",
+      "artisanSkills": [
+        "Body Painting",
+        "Embroidery",
+        "Craftsman"
+      ],
+      "halfMagic": "Troubadours may make Half-Magic tests for knowledge of legends, myths, and folklore of their home province's lands and people. They may also make Half-Magic tests to identify instruments and performing arts of different areas.",
+      "talentOptions": {
+        "Novice": [
+          {
+            "ref": "avoid-blow",
+            "name": "Avoid Blow"
+          },
+          {
+            "ref": "conversation",
+            "name": "Conversation"
+          },
+          {
+            "ref": "haggle",
+            "name": "Haggle"
+          },
+          {
+            "ref": "impressive-display",
+            "name": "Impressive Display"
+          },
+          {
+            "ref": "melee-weapons",
+            "name": "Melee Weapons"
+          },
+          {
+            "ref": "read-and-write-language",
+            "name": "Read and Write Language"
+          },
+          {
+            "ref": "speak-language",
+            "name": "Speak Language"
+          },
+          {
+            "ref": "taunt",
+            "name": "Taunt"
+          },
+          {
+            "ref": "throwing-weapons",
+            "name": "Throwing Weapons"
+          },
+          {
+            "ref": "winning-smile",
+            "name": "Winning Smile"
+          }
+        ],
+        "Journeyman": [
+          {
+            "ref": "air-speaking",
+            "name": "Air Speaking"
+          },
+          {
+            "ref": "blade-juggle",
+            "name": "Blade Juggle"
+          },
+          {
+            "ref": "diplomacy",
+            "name": "Diplomacy"
+          },
+          {
+            "ref": "disguise-self",
+            "name": "Disguise Self"
+          },
+          {
+            "ref": "engaging-banter",
+            "name": "Engaging Banter"
+          },
+          {
+            "ref": "graceful-exit",
+            "name": "Graceful Exit"
+          },
+          {
+            "ref": "hypnotize",
+            "name": "Hypnotize"
+          },
+          {
+            "ref": "leadership",
+            "name": "Leadership"
+          },
+          {
+            "ref": "lion-heart",
+            "name": "Lion Heart"
+          },
+          {
+            "ref": "mimic-voice",
+            "name": "Mimic Voice"
+          }
+        ]
+      },
+      "circles": [
+        {
+          "circle": 1,
+          "disciplineTalents": [
+            {
+              "ref": "emotion-song",
+              "name": "Emotion Song"
+            },
+            {
+              "ref": "first-impression",
+              "name": "First Impression"
+            },
+            {
+              "ref": "heartening-laugh",
+              "name": "Heartening Laugh"
+            },
+            {
+              "ref": "item-history",
+              "name": "Item History"
+            },
+            {
+              "ref": "thread-weaving",
+              "name": "Thread Weaving",
+              "variant": "Story Weaving"
+            }
+          ],
+          "abilities": [
+            {
+              "type": "karma",
+              "name": "Karma",
+              "text": "The adept may spend a Karma Point on Interaction tests"
+            }
+          ],
+          "freeTalents": [
+            {
+              "ref": "entertainer",
+              "name": "Entertainer",
+              "kind": "skill",
+              "note": "The adept is experienced in the ways of performing before a crowd. This talent works like the Entertainer skill (p. 196), but does not require the adept to choose a specialty."
+            }
+          ]
+        },
+        {
+          "circle": 2,
+          "disciplineTalents": [
+            {
+              "ref": "etiquette",
+              "name": "Etiquette"
+            }
+          ],
+          "abilities": [
+            {
+              "type": "defense",
+              "name": "Defense",
+              "text": "The adept adds +1 to his Social Defense.",
+              "defense": "social",
+              "bonus": 1
+            }
+          ]
+        },
+        {
+          "circle": 3,
+          "disciplineTalents": [
+            {
+              "ref": "empathic-sense",
+              "name": "Empathic Sense"
+            }
+          ],
+          "abilities": [
+            {
+              "type": "karma",
+              "name": "Karma",
+              "text": "The adept may spend a Karma Point on any test to gain or recall information."
+            }
+          ]
+        },
+        {
+          "circle": 4,
+          "disciplineTalents": [
+            {
+              "ref": "research",
+              "name": "Research"
+            }
+          ],
+          "abilities": [
+            {
+              "type": "defense",
+              "name": "Defense",
+              "text": "The adept adds +1 to his Mystic Defense.",
+              "defense": "mystic",
+              "bonus": 1
+            }
+          ]
+        },
+        {
+          "circle": 5,
+          "disciplineTalents": [
+            {
+              "ref": "inspire-others",
+              "name": "Inspire Others"
+            }
+          ],
+          "abilities": [
+            {
+              "type": "one-last-word",
+              "name": "One Last Word",
+              "text": "If the adept fails a test against a target's Social Defense, the adept may take 2 Strain to add a Karma Die to the test result. One Last Word can only be used once per failed test."
+            },
+            {
+              "type": "karma",
+              "name": "Karma",
+              "text": "Once per round the adept may spend a Karma Point to add to another character's test by offering encouragement. The target must be able to hear and/or see the Troubadour."
+            }
+          ]
+        },
+        {
+          "circle": 6,
+          "disciplineTalents": [
+            {
+              "ref": "lasting-impression",
+              "name": "Lasting Impression"
+            }
+          ],
+          "abilities": [
+            {
+              "type": "defense",
+              "name": "Defense",
+              "text": "The adept adds +2 to his Social Defense.",
+              "defense": "social",
+              "bonus": 2
+            }
+          ]
+        },
+        {
+          "circle": 7,
+          "disciplineTalents": [
+            {
+              "ref": "resist-taunt",
+              "name": "Resist Taunt"
+            }
+          ],
+          "abilities": [
+            {
+              "type": "initiative",
+              "name": "Initiative",
+              "text": "The adept adds +1 Step to his Initiative.",
+              "bonus": 1
+            }
+          ]
+        },
+        {
+          "circle": 8,
+          "disciplineTalents": [
+            {
+              "ref": "slough-blame",
+              "name": "Slough Blame"
+            }
+          ],
+          "abilities": [
+            {
+              "type": "defense",
+              "name": "Defense",
+              "text": "The adept adds +3 to his Social Defense.",
+              "defense": "social",
+              "bonus": 3
+            }
+          ]
+        }
+      ],
+      "durability": 5
+    },
+    {
+      "id": "warrior",
+      "name": "Warrior",
+      "description": "Warriors are fighters and soldiers trained to use magic to enhance their combat techniques. They often form groups with other Warriors, living in seclusion in self-sufficient settlements similar to monastic orders.",
+      "importantAttributes": [
+        "DEX",
+        "STR",
+        "TOU"
+      ],
+      "karmaRitual": "The Warrior sits cross-legged, holding a weapon across his knees. After a few minutes of meditation he levitates, as if using the Air Dance talent; the ritual use of this talent does not cause him any Strain damage. The Warrior then performs a series of four exercises: the earth defense, the water defense, the fire attack, and the air attack. The ritual ends when the Warrior completes the final move of the air attack.",
+      "artisanSkills": [
+        "Sculpting",
+        "Rune Carving"
+      ],
+      "halfMagic": "Warriors can use half-magic when caring for or repairing their weapons and armor, knowledge of military tactics and strategy (recognizing the safest approach to a target when planning a battle, for instance) and to recall events of Barsaive's military history. They also use half-magic to recognize warrior orders, famous ancient Warriors, and ancient arms and armor.",
+      "talentOptions": {
+        "Novice": [
+          {
+            "ref": "acrobatic-defense",
+            "name": "Acrobatic Defense"
+          },
+          {
+            "ref": "anticipate-blow",
+            "name": "Anticipate Blow"
+          },
+          {
+            "ref": "danger-sense",
+            "name": "Danger Sense"
+          },
+          {
+            "ref": "distract",
+            "name": "Distract"
+          },
+          {
+            "ref": "fireblood",
+            "name": "Fireblood"
+          },
+          {
+            "ref": "maneuver",
+            "name": "Maneuver"
+          },
+          {
+            "ref": "missile-weapons",
+            "name": "Missile Weapons"
+          },
+          {
+            "ref": "shield-bash",
+            "name": "Shield Bash"
+          },
+          {
+            "ref": "tactics",
+            "name": "Tactics"
+          },
+          {
+            "ref": "unarmed-combat",
+            "name": "Unarmed Combat"
+          }
+        ],
+        "Journeyman": [
+          {
+            "ref": "disarm",
+            "name": "Disarm"
+          },
+          {
+            "ref": "etiquette",
+            "name": "Etiquette"
+          },
+          {
+            "ref": "leadership",
+            "name": "Leadership"
+          },
+          {
+            "ref": "life-check",
+            "name": "Life Check"
+          },
+          {
+            "ref": "lion-heart",
+            "name": "Lion Heart"
+          },
+          {
+            "ref": "momentum-attack",
+            "name": "Momentum Attack"
+          },
+          {
+            "ref": "second-weapon",
+            "name": "Second Weapon"
+          },
+          {
+            "ref": "spot-armor-flaw",
+            "name": "Spot Armor Flaw"
+          },
+          {
+            "ref": "steely-stare",
+            "name": "Steely Stare"
+          },
+          {
+            "ref": "swift-kick",
+            "name": "Swift Kick"
+          }
+        ]
+      },
+      "circles": [
+        {
+          "circle": 1,
+          "disciplineTalents": [
+            {
+              "ref": "avoid-blow",
+              "name": "Avoid Blow"
+            },
+            {
+              "ref": "melee-weapons",
+              "name": "Melee Weapons"
+            },
+            {
+              "ref": "thread-weaving",
+              "name": "Thread Weaving",
+              "variant": "War Weaving"
+            },
+            {
+              "ref": "tiger-spring",
+              "name": "Tiger Spring"
+            },
+            {
+              "ref": "wood-skin",
+              "name": "Wood Skin"
+            }
+          ],
+          "abilities": []
+        },
+        {
+          "circle": 2,
+          "disciplineTalents": [
+            {
+              "ref": "wound-balance",
+              "name": "Wound Balance"
+            }
+          ],
+          "abilities": [
+            {
+              "type": "defense",
+              "name": "Defense",
+              "text": "The adept adds +1 to his Physical Defense.",
+              "defense": "physical",
+              "bonus": 1
+            }
+          ]
+        },
+        {
+          "circle": 3,
+          "disciplineTalents": [
+            {
+              "ref": "air-dance",
+              "name": "Air Dance"
+            }
+          ],
+          "abilities": [
+            {
+              "type": "karma",
+              "name": "Karma",
+              "text": "The adept may spend a Karma Point on a Recovery test."
+            }
+          ]
+        },
+        {
+          "circle": 4,
+          "disciplineTalents": [
+            {
+              "ref": "waterfall-slam",
+              "name": "Waterfall Slam"
+            }
+          ],
+          "abilities": [
+            {
+              "type": "defense",
+              "name": "Defense",
+              "text": "The adept adds +1 to his Mystic Defense.",
+              "defense": "mystic",
+              "bonus": 1
+            }
+          ]
+        },
+        {
+          "circle": 5,
+          "disciplineTalents": [
+            {
+              "ref": "earth-skin",
+              "name": "Earth Skin"
+            }
+          ],
+          "abilities": [
+            {
+              "type": "battle-rites",
+              "name": "Battle Rites",
+              "text": "The adept spends 30 minutes in meditation and selects a talent. During any encounter over the next 24 hours, the adept may activate Battle Rites by spending a Karma Point as a Simple action. This allows the adept to reduce the Strain cost of the selected talent by 1 once per round for the duration of the encounter. Battle Rites may be used in multiple encounters, but requires a Karma Point be spent for each encounter."
+            },
+            {
+              "type": "karma",
+              "name": "Karma",
+              "text": "The adept may spend a Karma Point on any Damage test made in close combat."
+            }
+          ]
+        },
+        {
+          "circle": 6,
+          "disciplineTalents": [
+            {
+              "ref": "temper-flesh",
+              "name": "Temper Flesh"
+            }
+          ],
+          "abilities": [
+            {
+              "type": "defense",
+              "name": "Defense",
+              "text": "The adept adds +2 to his Physical Defense.",
+              "defense": "physical",
+              "bonus": 2
+            }
+          ]
+        },
+        {
+          "circle": 7,
+          "disciplineTalents": [
+            {
+              "ref": "crushing-blow",
+              "name": "Crushing Blow"
+            }
+          ],
+          "abilities": [
+            {
+              "type": "recovery",
+              "name": "Recovery",
+              "text": "The adept gains an additional Recovery test.",
+              "bonus": 1
+            }
+          ]
+        },
+        {
+          "circle": 8,
+          "disciplineTalents": [
+            {
+              "ref": "second-attack",
+              "name": "Second Attack"
+            }
+          ],
+          "abilities": [
+            {
+              "type": "defense",
+              "name": "Defense",
+              "text": "The adept adds +3 to his Physical Defense.",
+              "defense": "physical",
+              "bonus": 3
+            }
+          ]
+        }
+      ],
+      "durability": 7
+    },
+    {
+      "id": "weaponsmith",
+      "name": "Weaponsmith",
+      "description": "A Weaponsmith trains to gain an iron will and a highly critical eye. In addition to their role as craftsmen that make mundane weapons, armor, and other goods, Weaponsmiths help identify and create legendary weapons. Nearly every community places great value on their Weaponsmiths.",
+      "importantAttributes": [
+        "PER",
+        "WIL",
+        "CHA"
+      ],
+      "karmaRitual": "The Weaponsmith heats a thin strip of metal in a hot fire or forge. Over the next half hour, he fashions the metal into a blade, arrowhead, or spear-tip, but instead of forging an effective item, he intentionally tempers the metal too soon, making it brittle. The Weaponsmith then shatters the defective piece of metalwork, ending the ritual.",
+      "artisanSkills": [
+        "Rune Carving",
+        "Wood Carving"
+      ],
+      "halfMagic": "Weaponsmiths may use half-magic when caring for weapons and armor and to recognize different types of weapons and armor used or worn by different Namegiver races or their creators.",
+      "talentOptions": {
+        "Novice": [
+          {
+            "ref": "avoid-blow",
+            "name": "Avoid Blow"
+          },
+          {
+            "ref": "awareness",
+            "name": "Awareness"
+          },
+          {
+            "ref": "danger-sense",
+            "name": "Danger Sense"
+          },
+          {
+            "ref": "disarm-trap",
+            "name": "Disarm Trap"
+          },
+          {
+            "ref": "fireblood",
+            "name": "Fireblood"
+          },
+          {
+            "ref": "first-impression",
+            "name": "First Impression"
+          },
+          {
+            "ref": "haggle",
+            "name": "Haggle"
+          },
+          {
+            "ref": "read-and-write-language",
+            "name": "Read and Write Language"
+          },
+          {
+            "ref": "shield-bash",
+            "name": "Shield Bash"
+          },
+          {
+            "ref": "speak-language",
+            "name": "Speak Language"
+          }
+        ],
+        "Journeyman": [
+          {
+            "ref": "battle-shout",
+            "name": "Battle Shout"
+          },
+          {
+            "ref": "diplomacy",
+            "name": "Diplomacy"
+          },
+          {
+            "ref": "earth-skin",
+            "name": "Earth Skin"
+          },
+          {
+            "ref": "etiquette",
+            "name": "Etiquette"
+          },
+          {
+            "ref": "fire-heal",
+            "name": "Fire Heal"
+          },
+          {
+            "ref": "heartening-laugh",
+            "name": "Heartening Laugh"
+          },
+          {
+            "ref": "iron-constitution",
+            "name": "Iron Constitution"
+          },
+          {
+            "ref": "leadership",
+            "name": "Leadership"
+          },
+          {
+            "ref": "missile-weapons",
+            "name": "Missile Weapons"
+          },
+          {
+            "ref": "resist-taunt",
+            "name": "Resist Taunt"
+          }
+        ]
+      },
+      "circles": [
+        {
+          "circle": 1,
+          "disciplineTalents": [
+            {
+              "ref": "forge-weapon",
+              "name": "Forge Weapon"
+            },
+            {
+              "ref": "item-history",
+              "name": "Item History"
+            },
+            {
+              "ref": "melee-weapons",
+              "name": "Melee Weapons"
+            },
+            {
+              "ref": "steel-thought",
+              "name": "Steel Thought"
+            },
+            {
+              "ref": "thread-weaving",
+              "name": "Thread Weaving",
+              "variant": "Thread Smithing"
+            }
+          ],
+          "abilities": [
+            {
+              "type": "karma",
+              "name": "Karma",
+              "text": "The adept can spend a Karma Point on any test to craft or repair an item."
+            }
+          ],
+          "freeTalents": [
+            {
+              "ref": "craftsman",
+              "name": "Craftsman",
+              "kind": "skill",
+              "note": "This talent is similar to the Craftsman skill (p. 195), allowing the adept to make tests to craft and repair mundane items, including weapons and armor."
+            }
+          ]
+        },
+        {
+          "circle": 2,
+          "disciplineTalents": [
+            {
+              "ref": "conversation",
+              "name": "Conversation"
+            }
+          ],
+          "abilities": [
+            {
+              "type": "defense",
+              "name": "Defense",
+              "text": "The adept adds +1 to his Mystic Defense.",
+              "defense": "mystic",
+              "bonus": 1
+            }
+          ]
+        },
+        {
+          "circle": 3,
+          "disciplineTalents": [
+            {
+              "ref": "suppress-curse",
+              "name": "Suppress Curse"
+            }
+          ],
+          "abilities": [
+            {
+              "type": "karma",
+              "name": "Karma",
+              "text": "The adept may spend a Karma Point on Recovery tests."
+            }
+          ]
+        },
+        {
+          "circle": 4,
+          "disciplineTalents": [
+            {
+              "ref": "wound-balance",
+              "name": "Wound Balance"
+            }
+          ],
+          "abilities": [
+            {
+              "type": "defense",
+              "name": "Defense",
+              "text": "The adept adds +1 to his Physical Defense.",
+              "defense": "physical",
+              "bonus": 1
+            }
+          ]
+        },
+        {
+          "circle": 5,
+          "disciplineTalents": [
+            {
+              "ref": "forge-armor",
+              "name": "Forge Armor"
+            }
+          ],
+          "abilities": [
+            {
+              "type": "traveling-smithy",
+              "name": "Traveling Smithy",
+              "text": "For 2 Strain, the adept uses magic to create an improvised forge, provided he has the minimum requirements necessary, such as a fire for working metal. The smithy lasts for one day, and gives a -3 penalty to any tests made that use it. Only the Weaponsmith may use the forge for tests."
+            },
+            {
+              "type": "karma",
+              "name": "Karma",
+              "text": "The adept can spend a Karma Point on Damage tests he makes with a weapon he crafted."
+            }
+          ]
+        },
+        {
+          "circle": 6,
+          "disciplineTalents": [
+            {
+              "ref": "temper-flesh",
+              "name": "Temper Flesh"
+            }
+          ],
+          "abilities": [
+            {
+              "type": "defense",
+              "name": "Defense",
+              "text": "The adept adds +2 to his Mystic Defense.",
+              "defense": "mystic",
+              "bonus": 2
+            }
+          ]
+        },
+        {
+          "circle": 7,
+          "disciplineTalents": [
+            {
+              "ref": "spot-armor-flaw",
+              "name": "Spot Armor Flaw"
+            }
+          ],
+          "abilities": [
+            {
+              "type": "mystic-armor",
+              "name": "Mystic Armor",
+              "text": "The adept adds +1 to his Mystic Armor.",
+              "bonus": 1
+            }
+          ]
+        },
+        {
+          "circle": 8,
+          "disciplineTalents": [
+            {
+              "ref": "lion-heart",
+              "name": "Lion Heart"
+            }
+          ],
+          "abilities": [
+            {
+              "type": "defense",
+              "name": "Defense",
+              "text": "The adept adds +3 to his Mystic Defense.",
+              "defense": "mystic",
+              "bonus": 3
+            }
+          ]
+        }
+      ],
+      "durability": 5
+    },
+    {
+      "id": "wizard",
+      "name": "Wizard",
+      "description": "Wizards are spellcasters focusing on the theoretical aspects of magic. Those who follow other spellcasting Disciplines sometimes disparage Wizards as being \"book magicians,\" but it is interesting to note that very few have the guts to call a Wizard that to his face.",
+      "importantAttributes": [
+        "PER",
+        "WIL",
+        "CHA"
+      ],
+      "karmaRitual": "The Wizard draws a circle at least two yards in diameter, then inscribes a triangle within the circle. Making any corrections necessary for accuracy in drawing the first circle, the Wizard draws another circle inside the triangle. Then a triangle within that circle, and so on. Soon the Wizard will be forced to create figures smaller than hand and stylus can possibly draw. He uses the power of magic to continue to draw, even when the results become too small to be seen with the naked eye. The sequence ends with a triangle and is complete once this final triangle is drawn.",
+      "artisanSkills": [
+        "Manuscript Illumination",
+        "Robe Embroidery"
+      ],
+      "halfMagic": "Wizards may use half-magic to recognize different types of magic use, identify specific uses of Wizardry, and for knowledge of magical rituals.",
+      "talentOptions": {
+        "Novice": [
+          {
+            "ref": "arcane-mutterings",
+            "name": "Arcane Mutterings"
+          },
+          {
+            "ref": "awareness",
+            "name": "Awareness"
+          },
+          {
+            "ref": "book-memory",
+            "name": "Book Memory"
+          },
+          {
+            "ref": "conversation",
+            "name": "Conversation"
+          },
+          {
+            "ref": "creature-analysis",
+            "name": "Creature Analysis"
+          },
+          {
+            "ref": "etiquette",
+            "name": "Etiquette"
+          },
+          {
+            "ref": "item-history",
+            "name": "Item History"
+          },
+          {
+            "ref": "read-and-write-language",
+            "name": "Read and Write Language"
+          },
+          {
+            "ref": "speak-language",
+            "name": "Speak Language"
+          },
+          {
+            "ref": "standard-matrix",
+            "name": "Standard Matrix"
+          }
+        ],
+        "Journeyman": [
+          {
+            "ref": "avoid-blow",
+            "name": "Avoid Blow"
+          },
+          {
+            "ref": "diplomacy",
+            "name": "Diplomacy"
+          },
+          {
+            "ref": "enhanced-matrix",
+            "name": "Enhanced Matrix"
+          },
+          {
+            "ref": "evidence-analysis",
+            "name": "Evidence Analysis"
+          },
+          {
+            "ref": "hypnotize",
+            "name": "Hypnotize"
+          },
+          {
+            "ref": "lifesight",
+            "name": "Lifesight"
+          },
+          {
+            "ref": "mystic-pursuit",
+            "name": "Mystic Pursuit"
+          },
+          {
+            "ref": "power-mask",
+            "name": "Power Mask"
+          },
+          {
+            "ref": "resist-taunt",
+            "name": "Resist Taunt"
+          },
+          {
+            "ref": "true-sight",
+            "name": "True Sight"
+          }
+        ]
+      },
+      "circles": [
+        {
+          "circle": 1,
+          "disciplineTalents": [
+            {
+              "ref": "dispel-magic",
+              "name": "Dispel Magic"
+            },
+            {
+              "ref": "patterncraft",
+              "name": "Patterncraft"
+            },
+            {
+              "ref": "research",
+              "name": "Research"
+            },
+            {
+              "ref": "spellcasting",
+              "name": "Spellcasting"
+            },
+            {
+              "ref": "thread-weaving",
+              "name": "Thread Weaving",
+              "variant": "Wizardry"
+            }
+          ],
+          "abilities": [],
+          "freeTalents": [
+            {
+              "ref": "standard-matrix",
+              "name": "Standard Matrix"
+            },
+            {
+              "ref": "standard-matrix",
+              "name": "Standard Matrix"
+            }
+          ]
+        },
+        {
+          "circle": 2,
+          "disciplineTalents": [
+            {
+              "ref": "astral-sight",
+              "name": "Astral Sight"
+            }
+          ],
+          "abilities": [
+            {
+              "type": "defense",
+              "name": "Defense",
+              "text": "The adept adds +1 to his Mystic Defense.",
+              "defense": "mystic",
+              "bonus": 1
+            }
+          ]
+        },
+        {
+          "circle": 3,
+          "disciplineTalents": [
+            {
+              "ref": "tenacious-weave",
+              "name": "Tenacious Weave"
+            }
+          ],
+          "abilities": [
+            {
+              "type": "karma",
+              "name": "Karma",
+              "text": "The adept may spend a Karma Point on any test to recall information (including Knowledge tests)."
+            }
+          ]
+        },
+        {
+          "circle": 4,
+          "disciplineTalents": [
+            {
+              "ref": "steel-thought",
+              "name": "Steel Thought"
+            }
+          ],
+          "abilities": [
+            {
+              "type": "defense",
+              "name": "Defense",
+              "text": "The adept adds +1 to his Social Defense.",
+              "defense": "social",
+              "bonus": 1
+            }
+          ]
+        },
+        {
+          "circle": 5,
+          "disciplineTalents": [
+            {
+              "ref": "astral-interference",
+              "name": "Astral Interference"
+            }
+          ],
+          "abilities": [
+            {
+              "type": "free-talent",
+              "name": "Free Talent",
+              "text": "One of the adept's free Standard Matrix talents is upgraded to an Enhanced Matrix."
+            },
+            {
+              "type": "book-mage",
+              "name": "Book Mage",
+              "text": "For 1 Strain, the adept gains a +5 to a Thread Weaving test to reattune on the fly if they are looking at the spell in their grimoire."
+            },
+            {
+              "type": "karma",
+              "name": "Karma",
+              "text": "The adept may spend a Karma Point to change the range of a spell from Self to Touch."
+            }
+          ]
+        },
+        {
+          "circle": 6,
+          "disciplineTalents": [
+            {
+              "ref": "willforce",
+              "name": "Willforce"
+            }
+          ],
+          "abilities": [
+            {
+              "type": "defense",
+              "name": "Defense",
+              "text": "The adept adds +2 to his Mystic Defense.",
+              "defense": "mystic",
+              "bonus": 2
+            }
+          ]
+        },
+        {
+          "circle": 7,
+          "disciplineTalents": [
+            {
+              "ref": "hold-thread",
+              "name": "Hold Thread"
+            }
+          ],
+          "abilities": [
+            {
+              "type": "mystic-armor",
+              "name": "Mystic Armor",
+              "text": "The adept adds +1 to his Mystic Armor.",
+              "bonus": 1
+            }
+          ]
+        },
+        {
+          "circle": 8,
+          "disciplineTalents": [
+            {
+              "ref": "suppress-curse",
+              "name": "Suppress Curse"
+            }
+          ],
+          "abilities": [
+            {
+              "type": "defense",
+              "name": "Defense",
+              "text": "The adept adds +3 to his Mystic Defense.",
+              "defense": "mystic",
+              "bonus": 3
+            }
+          ]
+        }
+      ],
+      "durability": 3
+    }
+  ]
+}

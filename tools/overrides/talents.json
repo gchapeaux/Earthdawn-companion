@@ -1,0 +1,97 @@
+{
+  "_comment": "Manual fixes for entries the OCR garbled (sidebars, tables, illustrations). 'replace' swaps description paragraphs [from, to) of the raw extraction; indexes refer to the raw OCR output, before headings are detected.",
+  "acrobatic-defense": {
+    "replace": [{ "from": 2, "to": 3, "with": [] }]
+  },
+  "fearsome-charge": {
+    "set": { "action": "Simple" },
+    "replace": [{ "from": 0, "to": 1, "with": [
+      "Illusion. The mounted adept frightens opponents when making a Charging Attack (p.396), undergoing a radical transformation as he charges—his eyes grow larger or glow, his teeth become pointed or the canines more elongated, and his hair stands away from his head in a wild tangle. The adept makes a Fearsome Charge test and compares it to the Social Defense of his desired targets, up to a maximum equal to his rank in Fearsome Charge. For each success, affected targets suffer a -1 penalty to all tests made against the adept for a number of rounds equal to the adept's Fearsome Charge rank."
+    ] }]
+  },
+  "gliding-stride": {
+    "replace": [{ "from": 2, "to": 4, "with": [] }]
+  },
+  "navigation": {
+    "replace": [{ "from": 3, "to": 8, "with": [] }],
+    "tables": [{
+      "title": "Navigation Table",
+      "columns": ["Difficulty Number", "Condition"],
+      "rows": [
+        ["5", "Clear night sky, few obstructions blocking the character's view (on an open plain, for instance)"],
+        ["7", "Scattered clouds and/or minor obstructions, such as low buildings"],
+        ["9", "Partly cloudy or significant obstructions (trees, nearby mountains, and so on)"],
+        ["12", "Overcast, heavy foliage or other conditions blocking the character's view of the sky"],
+        ["18", "Severe rainstorm or blizzard blocking the sky"]
+      ]
+    }]
+  },
+  "read-and-write-language": {
+    "replace": [{ "from": 0, "to": 4, "with": [
+      "The adept magically learns to read and write different languages. Using this talent he can learn a number of languages equal to his Read and Write Language rank.",
+      "If he has not reached this maximum, the adept can attempt to learn a new language by reading at least one page of text written in the language for at least one minute, then making a Read and Write Language test against the language's Learning Difficulty. If successful, he learns the language and notes it on his Character Record Sheet. If the test fails, the adept cannot attempt to learn that specific language again until he improves his Read and Write Language rank.",
+      "The Learning Difficulty for the different racial languages is shown in the Language Table. The numbers reflect the difficulty of learning the base \"racial\" versions of these languages. Dialects are considered different languages for the purposes of this talent (see below)."
+    ] }],
+    "tables": [{
+      "title": "Language Table",
+      "columns": ["Learning Difficulty", "Language"],
+      "rows": [["5", "Dwarf*"], ["6", "Sperethiel (Elf)"], ["6", "Human"], ["7", "Obsidiman"], ["6", "Or'zet (Ork)"], ["7", "T'skrang"], ["6", "Troll"], ["7", "Windling"]],
+      "footnote": "*All characters beginning play with the Dwarf language know the Throalic dialect."
+    }]
+  },
+  "research": {
+    "replace": [{ "from": 0, "to": 2, "with": [
+      "The adept finds information through study and investigation, including library research and following up on rumors and legends. He makes a Research test against a Difficulty Number determined by the type of information sought. The gamemaster may use the numbers suggested in the Research Table, or the guidelines for creating Difficulty Numbers in the Gamemaster's Guide. The success level determines how much information is obtained. More successes often turns up more detailed information than the adept initially sought."
+    ] }],
+    "tables": [{
+      "title": "Research Table",
+      "columns": ["Difficulty Number", "Type of Information"],
+      "rows": [["5", "General"], ["7", "Detailed"], ["9", "Intricate"], ["11", "Obscure"]]
+    }]
+  },
+  "speak-language": {
+    "replace": [{ "from": 0, "to": 4, "with": [
+      "The adept magically learns to communicate with others in different languages. Using this talent he can learn a number of languages equal to his Speak Language rank. If he has not reached this maximum, the adept can attempt to learn a new language by listening to a fluent speaker for at least one minute, then making a Speak Language test against the language's Learning Difficulty. If successful, he learns the language and notes it on his Character Record Sheet. If the test fails, the adept cannot attempt to learn that specific language again until he improves his Speak Language rank.",
+      "The Learning Difficulty for the different racial languages is shown in the Language Table. The numbers reflect the difficulty of learning the base \"racial\" versions of these languages. Dialects are considered different languages for the purposes of this talent (see below)."
+    ] }],
+    "tables": [{
+      "title": "Language Table",
+      "columns": ["Learning Difficulty", "Language"],
+      "rows": [["5", "Dwarf*"], ["6", "Sperethiel (Elf)"], ["6", "Human"], ["7", "Obsidiman"], ["6", "Or'zet (Ork)"], ["7", "T'skrang"], ["6", "Troll"], ["7", "Windling"]],
+      "footnote": "*All characters beginning play with the Dwarf language know the Throalic dialect."
+    }]
+  },
+  "thread-weaving": {
+    "replaceFromText": "This limit does not apply to threads",
+    "with": [
+      "This limit does not apply to threads woven for spell patterns; such threads are temporary, lasting only long enough for the spell to be cast. See the Workings of Magic (p.202) and Spell Magic (p.246) chapters for more information about threads and spell patterns.",
+      "Each Discipline has its own unique variant of the Thread Weaving talent, shown in parentheses in the Discipline's talent progression. If a rule calls for this specific name, the Thread Weaving talent from that specific Discipline must be used, not just any Thread Weaving talent. Adepts with more than one Discipline learn and improve each of their Discipline's Thread Weaving talents independently. See Learning New Disciplines, p.455, for more information on multi-Disciplining and the Thread Weaving talent."
+    ],
+    "tables": [{
+      "title": "Thread Weaving Talent Table",
+      "columns": ["Discipline", "Thread Weaving"],
+      "rows": [
+        ["Air Sailor", "Air Weaving"], ["Archer", "Arrow Weaving"], ["Beastmaster", "Beast Weaving"],
+        ["Cavalryman", "Rider Weaving"], ["Elementalist", "Elementalism"], ["Illusionist", "Illusionism"],
+        ["Nethermancer", "Nethermancy"], ["Scout", "Scout Weaving"], ["Sky Raider", "Sky Weaving"],
+        ["Swordmaster", "Weapon Weaving"], ["Thief", "Thief Weaving"], ["Troubadour", "Story Weaving"],
+        ["Warrior", "War Weaving"], ["Weaponsmith", "Thread Smithing"], ["Wizard", "Wizardry"]
+      ]
+    }]
+  },
+  "wilderness-survival": {
+    "set": { "strain": 0, "skillUse": { "allowed": true, "tier": "Novice", "note": null } },
+    "replace": [{ "from": 0, "to": 3, "with": [
+      "The adept knows how to survive in the wild. He is able to locate or build shelter, start a fire, find water, or forage for edible vegetation, such as berries, roots, fruits, mushrooms, and other plants. The adept makes a Wilderness Survival test against a Difficulty Number determined by the gamemaster, based on those shown in the Survival Table, and taking circumstances such as season, weather, and environment into account. Each use of this talent takes two hours and the adept may make four such tests per day, meaning he will sometimes need to make difficult survival decisions—food or water? shelter or food?"
+    ] }],
+    "tables": [{
+      "title": "Survival Table",
+      "columns": ["Terrain", "Difficulty Number"],
+      "rows": [
+        ["The Badlands", "12"], ["The Blood Wood", "10"], ["Hinterlands", "7"], ["Jungles", "7"],
+        ["Mountains, highland", "7"], ["Mountains, lowland", "6"], ["Plains", "6"],
+        ["The Poison Forest", "12"], ["The Wastes", "12"], ["Woodlands", "5"]
+      ]
+    }]
+  }
+}

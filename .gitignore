@@ -1,0 +1,5 @@
+__pycache__/
+*.pyc
+# Rulebook PDFs and OCR output stay out of the repository (copyright).
+*.pdf
+ocr/

@@ -1,0 +1,64 @@
+{
+  "_comment": "Manual fixes for entries the OCR garbled (sidebars, tables, two-column layouts). Indexes refer to the raw OCR paragraphs, before headings are detected. '_add' lists entries the OCR merged into a neighbour.",
+  "animal-handling": {
+    "dropFromText": "Example Artisan Skills"
+  },
+  "artisan": {
+    "tables": [{
+      "title": "Example Artisan Skills",
+      "columns": ["Skill"],
+      "rows": [["Acting"], ["Baking"], ["Basket Weaving"], ["Body Painting"], ["Carving"], ["Cooking"], ["Craft Armor"], ["Craft Weapon"], ["Dancing"], ["Embroidery"], ["Juggling"], ["Mapmaking"], ["Musician"], ["Poetry"], ["Rune Carving"], ["Sculpting"], ["Singing"], ["Storytelling"], ["Tattooing"], ["Wardrobe and Style"]]
+    }]
+  },
+  "knowledge": {
+    "tables": [{
+      "title": "Example Knowledge Skills",
+      "columns": ["Skill"],
+      "rows": [["Alchemy and Potions"], ["Ancient Weapons"], ["Baking"], ["Barsaive History"], ["Botany"], ["Court Dancing"], ["Creature Lore"], ["Discipline Lore"], ["Farming"], ["Horror Lore"], ["Legends and Heroes"], ["Military Organizations"], ["Province History"], ["Racial Lore"], ["Scourge History"], ["Trade Routes"], ["Wild Animals"]]
+    }]
+  },
+  "mapmaking": {
+    "replace": [
+      { "from": 1, "to": 3, "with": [
+        "In the time since the Scourge, no one has undertaken an expedition solely to map Barsaive, and so no reliable maps of post-Scourge Barsaive exist. Most current maps only indicate major landmarks such as larger rivers and mountain ranges, Death's Sea, major cities like Iopos, Travar, Jerris, and Kratas, and the Kingdom of Throal. Some more expensive maps show the main trade routes across the province, but most of these are commissioned by traders and are not for sale."
+      ] },
+      { "from": 7, "to": 10, "with": [] }
+    ]
+  },
+  "streetwise": {
+    "dropFromText": "Water Condition Table"
+  },
+  "_add": [
+    {
+      "id": "physician", "name": "Physician", "step": { "attribute": "PER", "bonus": 0 },
+      "action": "Sustained", "actionNote": null, "strain": 0, "strainNote": null, "page": 198,
+      "cost": "Novice", "skillType": "General", "usableAsArtisan": false,
+      "description": [
+        "The character diagnoses and prescribes treatments for injuries and diseases by examining the injury for half an hour, then making a Physician test against the condition's Difficulty Number. If successful, he learns what the problem is and how to treat it. The character's Physician rank is added to the next Recovery or resistance test his patient makes as applicable. The gamemaster determines the Difficulty Number for ailments, with suggested Difficulty Numbers for common ailments listed below. A physician can attempt to treat the same ailment a number of times per day equal to the patient's Number of Recovery tests.",
+        "Treating raw damage is treating an Injury, the effect of successful treatment is a Recovery test bonus, as noted above. The Physician skill can be used to treat Wounds. Wounds are treated individually, the physician has to take time to stitch or bandage each Wound.",
+        "Successful treatment of a Wound does not heal it, but removes its penalty to Recovery Tests (see Recovering from Injury, p. 380), thereby allowing to heal it faster. Treating Wounds in that way also eliminates most risks of infection."
+      ],
+      "tables": [{
+        "title": "Physician Table",
+        "columns": ["Ailment", "Difficulty Number"],
+        "rows": [["Common Cold", "4"], ["Injury and Wounds", "5"], ["Influenza", "6"], ["Mild Poison", "6"], ["Broken Bones", "8"], ["Strong Poison", "11"], ["Black Death", "15"]]
+      }]
+    },
+    {
+      "id": "swimming", "name": "Swimming", "step": { "attribute": "STR", "bonus": 0 },
+      "action": "Standard", "actionNote": null, "strain": 0, "strainNote": null, "page": 201,
+      "cost": "Novice", "skillType": "General", "usableAsArtisan": false,
+      "description": [
+        "All t'skrang, and many other Namegiver races who live near water, learn to swim. Characters make a Swimming test against a Difficulty Number determined by the condition of the water around them. Recommended Difficulty Numbers are given below.",
+        "Swimming uses a Standard Action every round, but a test is only made when the water condition changes or at the gamemaster's discretion. While swimming, a character's Movement Rate is halved, though when swimming with or against a strong current, the gamemaster may grant a bonus (or penalty) to the Movement Rate. Characters who fail their Swimming test make no appreciable progress. On a Rule of One result, the character starts drowning (see the Gamemaster's Guide).",
+        "Races and Swimming",
+        "Obsidimen cannot swim. If an obsidiman falls in the water he sinks and must find another way to quickly climb out. Obsidimen never possess knowledge of the Swimming skill and cannot even use it as Default Skill. Windlings only swim if they have no other option, as getting their wings wet cripples their flying ability. Windlings never use Swimming as a Default Skill, although intrepid members of this race can learn it. Windlings use half their ground Movement Rate when swimming. T'skrang are at home in the water and use their normal Movement Rate when swimming."
+      ],
+      "tables": [{
+        "title": "Water Condition Table",
+        "columns": ["Difficulty Number", "Water Condition"],
+        "rows": [["4", "Calm water"], ["5", "Small waves"], ["7", "Slow river current"], ["9", "Moderate river current"], ["13", "Major river current"], ["15", "Open ocean"]]
+      }]
+    }
+  ]
+}

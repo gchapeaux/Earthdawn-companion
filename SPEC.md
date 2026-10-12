@@ -1,6 +1,6 @@
 # Earthdawn Companion — Cahier des charges
 
-> Version 0.3 — 2026-10-12
+> Version 0.4 — 2026-10-12
 > Les points marqués **[À CONFIRMER]** attendent encore une décision.
 
 ## 1. Contexte et objectif
@@ -145,94 +145,130 @@ Ces tables sont des **fichiers de données**, pas du code en dur.
 ## 5. Données
 
 ### 5.1 Sources
-| Fichier | Contenu | Pages |
+| Fichier | Contenu | Pages du livre |
 |---|---|---|
-| `Talents.pdf` | *Player's Guide* 4e, chapitre Talents | 63 |
-| `Skills.pdf` | *Player's Guide* 4e, chapitre Skills | 19 |
-| `Disciplines.pdf` | *Player's Guide* 4e, chapitre Disciplines (15 disciplines, cercles 1–8) | 40 |
+| `Talents.pdf` | *Player's Guide* 4e, chapitre Talents | 119–181 |
+| `Skills.pdf` | *Player's Guide* 4e, chapitre Skills | 183–201 |
+| `Disciplines.pdf` | *Player's Guide* 4e, chapitre Disciplines (15 disciplines, cercles 1–8) | 79–118 |
+| `Concepts_and_Races.pdf` | *Player's Guide* 4e, chapitres Concepts et Races | 31–56 |
 | Image | Step/Action Dice Table | — |
 | Image | Fiche de création 4e (table des attributs, races) | — |
-| *À fournir* | *Player's Guide* 4e, chapitre Races (texte des capacités raciales) | — |
 
 Les PDF **ne sont pas** versionnés dans le dépôt.
 
-### 5.2 Transcription en JSON
-Toutes les données de règles sont transcrites **une fois** en fichiers JSON dans
-`data/`, puis intégrées à l'app. L'app ne lit jamais les PDF.
+### 5.2 Transcription en JSON ✅
 
-Points d'attention : les PDF ont été produits par « Microsoft Print to PDF » et leur
-couche texte est **incomplète** :
-- les formules `Step:` (ex. `Rank+DEX`) et certains intertitres (« Initiate Talent
-  Options ») manquent dans le texte extrait ;
-- les lignes qui contiennent des ligatures (`fl`, `fi`…) sont parfois perdues.
+Toutes les données de règles sont transcrites en fichiers JSON dans `data/`, puis
+intégrées à l'app. L'app ne lit jamais les PDF.
 
-Méthode de transcription :
-1. extraction du texte ;
-2. lecture des pages rendues en image pour combler les trous ;
-3. **script de validation** :
-   - chaque talent cité par une discipline existe dans `talents.json` ;
-   - chaque talent a une formule de Step, une action et un strain ;
-   - aucune description ne se termine en milieu de phrase ;
-4. relecture humaine ciblée : liste des fiches signalées par le script.
+| Fichier | Contenu |
+|---|---|
+| `data/talents.json` | 149 talents |
+| `data/skills.json` | 23 compétences, liste des compétences par défaut, table « Talents Available as Skills » |
+| `data/disciplines.json` | 15 disciplines × 8 cercles, talents optionnels Novice et Journeyman |
+| `data/races.json` | 8 races, attributs de départ, capacités raciales (texte complet + effets chiffrés) |
+| `data/step-dice.json` | Step → dés, Steps 1 à 40 |
+| `data/attribute-table.json` | Valeur d'attribut → Step et caractéristiques dérivées, valeurs 1 à 30 |
+
+Les PDF ont été produits par « Microsoft Print to PDF » et une partie du texte y est
+dessinée en formes vectorielles : les formules `Step:`, certains titres et les lignes
+contenant des ligatures (`fl`, `fi`) sont absents du texte extractible. La chaîne de
+transcription (`tools/`, voir `tools/README.md`) est donc :
+
+1. rendu des pages en image (300 dpi) puis **OCR** (Tesseract) ;
+2. découpage automatique en fiches (talents, compétences, disciplines, races) ;
+3. **corrections manuelles** versionnées dans `tools/overrides/*.json`, faites en lisant
+   les pages concernées : encadrés et tableaux sur deux colonnes, textes autour des
+   illustrations (une vingtaine de fiches) ;
+4. **script de validation** `tools/validate_data.py` :
+   - chaque talent cité par une discipline (cercles, options, talents gratuits) existe ;
+   - chaque fiche a un Step valide, une action, un strain, une page ;
+   - le palier « Skill Use » de chaque talent concorde avec la table « Talents Available
+     as Skills » du chapitre Skills (contrôle croisé entre deux chapitres) ;
+   - chaque discipline a 8 cercles, 5 talents au cercle 1 puis 1 par cercle, Thread
+     Weaving au cercle 1 ;
+   - les tables Step → dés et attributs sont complètes ;
+   - avertissement sur les paragraphes qui ne finissent pas une phrase et les caractères
+     suspects.
+
+État : **0 erreur**, 1 avertissement attendu (bloc de statistiques de Spirit Mount).
+Les textes d'ambiance des races sont omis (trop bruités par les illustrations, inutiles
+pour l'app).
 
 ### 5.3 Modèle de données
 
+Les descriptions sont des listes de paragraphes ; un paragraphe qui commence par `## `
+est un intertitre. Les tableaux des fiches sont structurés dans `tables`.
+
 ```jsonc
-// data/talents.json
+// data/talents.json → { "talents": [ … ] }
 {
   "id": "forge-weapon",
   "name": "Forge Weapon",
-  "step": { "attribute": "PER", "rank": true },   // attribute: null si "Rank" seul ; step: null si NA
-  "action": "Sustained",                           // Standard | Simple | Free | Sustained | NA
+  "step": { "attribute": "PER", "bonus": 0 },  // Step = Rang + attribut + bonus ; attribute null si "Rank" seul ; step null si NA
+  "action": "Sustained",                        // Standard | Simple | Free | Sustained | NA
+  "actionNote": null,                           // "see text" quand le livre renvoie au texte
   "strain": 0,
-  "skillUse": { "allowed": true, "tier": "Journeyman" },
-  "description": "…",
-  "nonMagicalNote": null,
-  "page": 0
+  "strainNote": null,
+  "skillUse": { "allowed": false, "tier": null, "note": null },  // tier : Novice | Journeyman | Warden | Master
+  "nonMagicalNote": null,                       // différences de la version compétence
+  "page": 148,
+  "description": [ "The adept performs a ritual…", "## Dialects", "…" ],
+  "tables": [ { "title": "…", "columns": ["…"], "rows": [["…"]], "footnote": "…" } ]  // optionnel
 }
 
-// data/skills.json
+// data/skills.json → { "defaultSkills": [ids], "talentsAsSkills": { "Novice": [noms], "Journeyman": [noms] }, "skills": [ … ] }
 {
-  "id": "craft-armor",
-  "name": "Craft Armor",
-  "skillType": "Artisan",                          // Artisan | General | Knowledge | Language
-  "step": { "attribute": "PER", "rank": true },
-  "action": "Sustained",
-  "strain": 0,
-  "description": "…",
-  "page": 0
+  "id": "craft-armor", "name": "Craft Armor",
+  "step": { "attribute": "PER", "bonus": 0 }, "action": "Sustained", "strain": 0,
+  "cost": "Novice",                             // palier de coût en Points de Légende
+  "skillType": "General",                       // Artisan | General | Knowledge | Language
+  "usableAsArtisan": true,
+  "default": false,                             // utilisable sans rang (Default Skill Table)
+  "page": 194, "description": [ "…" ]
 }
 
-// data/disciplines.json
+// data/disciplines.json → { "disciplines": [ … ] }
 {
-  "id": "weaponsmith",
-  "name": "Weaponsmith",
-  "importantAttributes": ["CHA", "PER", "WIL"],
-  "karmaRitual": "…",
-  "artisanSkills": ["Rune Carving", "Wood Carving"],
-  "halfMagic": "…",
+  "id": "weaponsmith", "name": "Weaponsmith",
+  "description": "…", "importantAttributes": ["PER", "WIL", "CHA"],
+  "karmaRitual": "…", "artisanSkills": ["Rune Carving", "Wood Carving"], "halfMagic": "…",
+  "durability": 5,                              // ajouté à chaque cercle
+  "notes": [ { "name": "Mount", "text": "…" } ],  // optionnel (Beastmaster, Cavalryman)
   "talentOptions": {
-    "Initiate":   ["avoid-blow", "awareness", "danger-sense", "…"],
-    "Journeyman": ["battle-shout", "diplomacy", "…"]
+    "Novice":     [ { "ref": "avoid-blow", "name": "Avoid Blow" }, … ],
+    "Journeyman": [ { "ref": "battle-shout", "name": "Battle Shout" }, … ]
   },
   "circles": [
     {
       "circle": 1,
-      "durability": 5,
-      "freeTalent": { "ref": "craftsman", "note": "…" },
-      "disciplineTalents": ["forge-weapon", "item-history", "melee-weapons",
-                            "steel-thought", { "ref": "thread-weaving", "variant": "Thread Smithing" }],
-      "abilities": [ { "type": "karma", "text": "Karma on any test to craft or repair an item" } ]
+      "freeTalents": [ { "ref": "craftsman", "name": "Craftsman", "kind": "skill", "note": "…" } ],
+      "disciplineTalents": [ { "ref": "forge-weapon", "name": "Forge Weapon" },
+                             { "ref": "thread-weaving", "name": "Thread Weaving", "variant": "Thread Smithing" } ],
+      "abilities": [ { "type": "karma", "name": "Karma", "text": "The adept can spend a Karma Point on any test to craft or repair an item." } ]
     },
     {
       "circle": 2,
-      "disciplineTalents": ["conversation"],
-      "abilities": [ { "type": "defense", "defense": "mystic", "bonus": 1 } ]
+      "disciplineTalents": [ { "ref": "conversation", "name": "Conversation" } ],
+      "abilities": [ { "type": "defense", "name": "Defense", "defense": "mystic", "bonus": 1, "text": "…" } ]
     }
   ]
 }
+// Types de capacités : karma, defense (+defense, bonus), recovery, initiative, mystic-armor (+bonus),
+// free-talent (amélioration de matrice), et capacités nommées (traveling-smithy, collaborate…).
 
-// data/races.json            → { "races": [ { "id": "windling", "abilities": [...], "movement": { "ground": 6, "flight": 16 }, "karmaModifier": 6, "startingAttributes": {...} } ] }
+// data/races.json → { "races": [ … ] }
+{
+  "id": "windling", "name": "Windling", "page": 53,
+  "maturity": "30", "lifespan": "170", "height": "18\"", "weight": 13,
+  "movement": { "ground": 6, "flight": 16 }, "karmaModifier": 6,
+  "startingAttributes": { "DEX": 11, "STR": 4, "TOU": 8, "PER": 11, "WIL": 10, "CHA": 12 },
+  "abilities": [
+    { "name": "Astral Sight", "talentRef": "astral-sight", "text": "…" },
+    { "name": "Increased Physical Defense", "effects": [ { "stat": "physicalDefense", "bonus": 2 } ], "text": "…" }
+  ]
+}
+
 // data/step-dice.json         → { "steps": [ { "step": 9, "dice": "D8+D6" }, … ] }
 // data/attribute-table.json   → { "values": [ { "value": 12, "step": 5, "defense": 7, … } ] }
 
@@ -331,14 +367,11 @@ Les textes d'Earthdawn sont protégés (FASA). L'app est **à usage privé du gr
 | Races et talents raciaux | Inclus en V1 |
 | Table des attributs, lignes 28–30 | Conformes au livre |
 
-Reste à fournir : le chapitre **Races** du *Player's Guide*, pour le texte complet des
-capacités raciales. En attendant, elles n'ont qu'un libellé court.
-
 ## 10. Plan de réalisation
 
 1. ✅ Cahier des charges v0.3, tables Step→dés, attributs et races en JSON.
-2. **Données** : transcription de `talents.json`, `skills.json` et `disciplines.json`,
-   script de validation, relecture.
+2. ✅ **Données** : transcription de `talents.json`, `skills.json`, `disciplines.json` et
+   des capacités raciales, script de validation. Relecture humaine au fil de l'usage.
 3. **Squelette** : solution .NET (Core + App + Tests), CI, chargement des données.
 4. **Banque** : listes, recherche, filtres, fiches, favoris.
 5. **Personnage** : attributs, discipline et cercle, talents, calcul Step → dés,

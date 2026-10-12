@@ -1,0 +1,45 @@
+{
+  "_comment": "Intro texts wrapped around illustrations come out of the OCR with noise; these replace them as printed.",
+  "air-sailor": {
+    "description": "Air Sailors are the swashbuckling brotherhood of the sky. Air Sailors never leave their fellows behind and embrace the idea of togetherness, working to protect and spread civilization, rather than preying upon it.",
+    "karmaRitual": "The Air Sailor sits alone in silent meditation under the open sky for several minutes, picturing in his mind's eye his airship sailing through the clouds at the start of a long journey. The adept envisions an aerial journey he hopes to make one day, imagining scenes of this journey, including the risks and perils, and how his training and skills might help make the journey a safe one. The ritual is complete when, half an hour later, the imagined journey ends safely."
+  },
+  "beastmaster": {
+    "description": "Beastmasters are adepts that use magic to emulate and interact with animals and other creatures. Some develop these abilities to become expert trackers and survivalists, while others forge magical bonds with animal companions, or train and care for the domestic animals that support day to day life in Barsaive.",
+    "halfMagic": "Beastmasters may use half-magic when dealing with or caring for animals in ways beyond those described by their talents, including animal husbandry and first aid. Beastmasters may use half-magic when recognizing different animals, animal tracks, and abnormal behavior among animals and creatures."
+  },
+  "cavalryman": {
+    "karmaRitual": "The Cavalryman plants a target in the ground, then rides his mount several minutes distance away. Blindfolding himself, he directs his mount to return to the target. Once he closes to about 100 yards, the Cavalryman uses the almost psychic connection with his mount, and whatever other empathic talents he possesses, to urge his mount to charge the target. Still blindfolded, the Cavalryman strikes the target with one of his weapons. He then removes the blindfold to end the ritual."
+  },
+  "illusionist": {
+    "description": "Illusionists cast spells that work through deception. However, some Illusionist spells do have real effects; Illusionists learned long ago that if everything they did was an illusion, people quickly caught on and their magic became less effective. Now they balance real magic, illusions, trickery, and sleight of hand.",
+    "karmaRitual": "The Illusionist does not use the same ritual each time. His Karma ritual does require him to incorporate certain elements every time, however: showy spells, tricks or snappy banter, and an assistant. Other than that, the Illusionist makes up his ritual on the spot. The Illusionist must do his best during this time to convince his assistant that the ritual is very serious and must conform to a precise formula.",
+    "halfMagic": "Illusionists make Half-Magic tests to recognize different types of magic use, as well as specific uses of illusion magic. They also make Half-Magic tests when attempting to perceive the \"truth\" of a given situation."
+  },
+  "nethermancer": {
+    "karmaRitual": "The Nethermancer drinks tea with a spirit servant or other otherworldly creature and talks of life beyond this world. The ritual ends after a half hour has passed with the Nethermancer draining the last drop from his final cup of tea."
+  },
+  "sky-raider": {
+    "description": "Sky Raiders are ruthless pirates forming a potent force in Barsaive. Their airships raid all over the province, targeting merchant caravans as well as smaller towns and villages. Sky Raiders are proud, and show great loyalty to other Sky Raiders—unless that raider belongs to an enemy clan or moot.",
+    "karmaRitual": "The Sky Raider spends several minutes in silent meditation beneath the open sky. Then he begins to strike his shield with a weapon, slowly at first. The striking accelerates until the Sky Raider is beating his shield at a furious rate. Just before the ritual ends, the Sky Raider stops, continuing to meditate while his shield still resonates from the furious bashing. The ritual ends when the echoes from the last drumbeat fade."
+  },
+  "swordmaster": {
+    "description": "Swordmasters are fighters who learn the value of a well-handled weapon, training to demonstrate quickness, flash, and panache in a fight. Swordmasters often emphasize style as much as skill in combat. While swords are the most common weapon employed by this Discipline, some schools focus on and train with other weapons.",
+    "halfMagic": "Swordmasters use half-magic to care for their weapons, know the history of legendary weapons, and recognize different types of melee weapons. Swordmasters may also use half-magic to identify another Swordmaster's fighting techniques, including which prominent Swordmasters may have shaped the individual's style."
+  },
+  "thief": {
+    "karmaRitual": "The Thief sits by himself in a darkened area and concentrates for half an hour on the knowledge that he is alone in the world and can rely, first and foremost, only on himself. With this firmly established in both heart and mind, he sets out to use one of his Discipline talents. The ritual ends as soon as the adept successfully uses the talent."
+  },
+  "troubadour": {
+    "description": "Troubadours serve as entertainers, storytellers, actors, and songsmiths. As such, they represent the closest thing to a historian or scholar that common people usually see.",
+    "karmaRitual": "The Troubadour performs a ballad or skit before an audience of at least two others. He can juggle, joke, tell tall tales, or sing serious legends. Half an hour after he starts, the Troubadour finishes the performance with a short story, ending the tale with the phrase, \"And there it ends, for such is the truth of the thing.\""
+  },
+  "weaponsmith": {
+    "karmaRitual": "The Weaponsmith heats a thin strip of metal in a hot fire or forge. Over the next half hour, he fashions the metal into a blade, arrowhead, or spear-tip, but instead of forging an effective item, he intentionally tempers the metal too soon, making it brittle. The Weaponsmith then shatters the defective piece of metalwork, ending the ritual."
+  },
+  "wizard": {
+    "description": "Wizards are spellcasters focusing on the theoretical aspects of magic. Those who follow other spellcasting Disciplines sometimes disparage Wizards as being \"book magicians,\" but it is interesting to note that very few have the guts to call a Wizard that to his face.",
+    "halfMagic": "Wizards may use half-magic to recognize different types of magic use, identify specific uses of Wizardry, and for knowledge of magical rituals.",
+    "artisanSkills": ["Manuscript Illumination", "Robe Embroidery"]
+  }
+}
