@@ -1,0 +1,165 @@
+{
+  "source": "Earthdawn 4e Player's Guide - Step/Action Dice Table",
+  "steps": [
+    {
+      "step": 1,
+      "dice": "D4-2"
+    },
+    {
+      "step": 2,
+      "dice": "D4-1"
+    },
+    {
+      "step": 3,
+      "dice": "D4"
+    },
+    {
+      "step": 4,
+      "dice": "D6"
+    },
+    {
+      "step": 5,
+      "dice": "D8"
+    },
+    {
+      "step": 6,
+      "dice": "D10"
+    },
+    {
+      "step": 7,
+      "dice": "D12"
+    },
+    {
+      "step": 8,
+      "dice": "2D6"
+    },
+    {
+      "step": 9,
+      "dice": "D8+D6"
+    },
+    {
+      "step": 10,
+      "dice": "2D8"
+    },
+    {
+      "step": 11,
+      "dice": "D10+D8"
+    },
+    {
+      "step": 12,
+      "dice": "2D10"
+    },
+    {
+      "step": 13,
+      "dice": "D12+D10"
+    },
+    {
+      "step": 14,
+      "dice": "2D12"
+    },
+    {
+      "step": 15,
+      "dice": "D12+2D6"
+    },
+    {
+      "step": 16,
+      "dice": "D12+D8+D6"
+    },
+    {
+      "step": 17,
+      "dice": "D12+2D8"
+    },
+    {
+      "step": 18,
+      "dice": "D12+D10+D8"
+    },
+    {
+      "step": 19,
+      "dice": "D20+2D6"
+    },
+    {
+      "step": 20,
+      "dice": "D20+D8+D6"
+    },
+    {
+      "step": 21,
+      "dice": "D20+2D8"
+    },
+    {
+      "step": 22,
+      "dice": "D20+D10+D8"
+    },
+    {
+      "step": 23,
+      "dice": "D20+2D10"
+    },
+    {
+      "step": 24,
+      "dice": "D20+D12+D10"
+    },
+    {
+      "step": 25,
+      "dice": "D20+2D12"
+    },
+    {
+      "step": 26,
+      "dice": "D20+D12+2D6"
+    },
+    {
+      "step": 27,
+      "dice": "D20+D12+D8+D6"
+    },
+    {
+      "step": 28,
+      "dice": "D20+D12+2D8"
+    },
+    {
+      "step": 29,
+      "dice": "D20+D12+D10+D8"
+    },
+    {
+      "step": 30,
+      "dice": "2D20+2D6"
+    },
+    {
+      "step": 31,
+      "dice": "2D20+D8+D6"
+    },
+    {
+      "step": 32,
+      "dice": "2D20+2D8"
+    },
+    {
+      "step": 33,
+      "dice": "2D20+D10+D8"
+    },
+    {
+      "step": 34,
+      "dice": "2D20+2D10"
+    },
+    {
+      "step": 35,
+      "dice": "2D20+D12+D10"
+    },
+    {
+      "step": 36,
+      "dice": "2D20+2D12"
+    },
+    {
+      "step": 37,
+      "dice": "2D20+D12+2D6"
+    },
+    {
+      "step": 38,
+      "dice": "2D20+D12+D8+D6"
+    },
+    {
+      "step": 39,
+      "dice": "2D20+D12+2D8"
+    },
+    {
+      "step": 40,
+      "dice": "2D20+D12+D10+D8"
+    }
+  ]
+}
