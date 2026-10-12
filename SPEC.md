@@ -1,6 +1,6 @@
 # Earthdawn Companion — Cahier des charges
 
-> Version 0.2 — 2026-10-12
+> Version 0.3 — 2026-10-12
 > Les points marqués **[À CONFIRMER]** attendent encore une décision.
 
 ## 1. Contexte et objectif
@@ -62,12 +62,22 @@ L'app sera partagée avec les autres joueurs du groupe : **toutes les discipline
   - Talent Options du palier Journeyman
 - Depuis la fiche d'une discipline, on ouvre directement la fiche de ses talents.
 
+#### F3 bis. Banque de races
+- Les 8 races : maturité, espérance de vie, taille, poids, mouvement, modificateur de
+  karma, attributs de départ et capacités raciales (`data/races.json`).
+
 #### F4. Favoris
 - Une étoile sur chaque fiche pour l'ajouter ou la retirer des favoris.
 - Un onglet « Favoris » accessible en un geste.
 
 #### F5. Mon personnage (un seul personnage en V1)
-- Saisie : nom, race, **discipline**, **cercle**.
+- Saisie : nom, **race**, **discipline**, **cercle**.
+- La race ajoute automatiquement ses **capacités raciales** : Heat Sight, Low-Light
+  Vision, Versatility, Astral Sight, Flight, Gahad, Tail Combat, Living Armor… Les
+  bonus chiffrés (+2 Physical Defense du windling, +3 Wound Threshold et +3 Physical
+  Armor de l'obsidiman, +2 STR pour la charge du nain) sont appliqués aux
+  caractéristiques. Les talents raciaux (ex. Astral Sight) sont ajoutés avec
+  `source: racial`, donc sans karma.
 - Saisie des **6 attributs** (DEX, STR, TOU, PER, WIL, CHA), puis calcul automatique
   depuis la table des attributs (§4) :
   - l'Attribute Step de chaque attribut ;
@@ -124,8 +134,8 @@ L'app sera partagée avec les autres joueurs du groupe : **toutes les discipline
   | Uncon, Death, Wound, Recov | TOU |
   | Mystic Armor | WIL |
 
-  ⚠️ Les lignes 28 à 30 de la fiche semblent contenir des coquilles : défense 16 trois
-  fois et charge 530 deux fois. **[À VÉRIFIER dans le livre]**
+  Les lignes 28 à 30 (défense 16 trois fois, charge 530 deux fois) sont conformes : peu
+  de valeurs changent sur les derniers niveaux.
 - **Step/Action Dice Table** : `data/step-dice.json` (Steps 1 à 40).
 - Les bonus de discipline (Durability, défenses par cercle) s'ajoutent aux
   caractéristiques dérivées.
@@ -142,6 +152,7 @@ Ces tables sont des **fichiers de données**, pas du code en dur.
 | `Disciplines.pdf` | *Player's Guide* 4e, chapitre Disciplines (15 disciplines, cercles 1–8) | 40 |
 | Image | Step/Action Dice Table | — |
 | Image | Fiche de création 4e (table des attributs, races) | — |
+| *À fournir* | *Player's Guide* 4e, chapitre Races (texte des capacités raciales) | — |
 
 Les PDF **ne sont pas** versionnés dans le dépôt.
 
@@ -221,6 +232,7 @@ Méthode de transcription :
   ]
 }
 
+// data/races.json            → { "races": [ { "id": "windling", "abilities": [...], "movement": { "ground": 6, "flight": 16 }, "karmaModifier": 6, "startingAttributes": {...} } ] }
 // data/step-dice.json         → { "steps": [ { "step": 9, "dice": "D8+D6" }, … ] }
 // data/attribute-table.json   → { "values": [ { "value": 12, "step": 5, "defense": 7, … } ] }
 
@@ -269,10 +281,14 @@ Décision : **.NET MAUI**, ciblant **Android** en V1, plutôt qu'une PWA.
 | iPhone | ❌ Mac + compte Apple Developer (99 $/an) | ✅ |
 | Build depuis une session Claude (Linux) | Android : oui (workload `maui-android`). Test sur ton téléphone. | oui |
 
-Le seul vrai inconvénient de MAUI est l'iPhone. Pour garder une porte de sortie, la
-logique métier et les données vivent dans une **bibliothèque .NET indépendante de
-MAUI** : si un joueur a un iPhone un jour, une version web Blazor pourra la réutiliser.
-**[À CONFIRMER : aucun joueur du groupe n'a d'iPhone ?]**
+**iPhone : hors périmètre pour le moment.** Pour garder une porte de sortie, la logique
+métier et les données vivent dans une **bibliothèque .NET indépendante de MAUI** : une
+version web Blazor pourra la réutiliser si besoin.
+
+**Distribution : APK** envoyé directement aux joueurs (installation depuis une source
+inconnue à autoriser sur Android). La CI produit l'APK signé en artefact téléchargeable.
+La clé de signature est conservée hors du dépôt (secret GitHub Actions), car Android
+refuse une mise à jour signée avec une autre clé.
 
 ### 7.2 Architecture
 
@@ -302,17 +318,25 @@ Les textes d'Earthdawn sont protégés (FASA). L'app est **à usage privé du gr
 - PDF sources non versionnés ;
 - APK partagé uniquement au sein du groupe, pas de publication publique.
 
-## 9. Questions ouvertes
+## 9. Décisions prises
 
-1. Un joueur du groupe a-t-il un iPhone ? (impact sur §7.1)
-2. Distribution : APK envoyé directement, ou test fermé Play Console ?
-3. Vérifier les lignes 28–30 de la table des attributs dans le livre.
-4. Les talents raciaux (ex. Astral Sight du windling) et les règles de race sont-ils
-   utiles en V1 ?
+| Sujet | Décision |
+|---|---|
+| Édition | Earthdawn 4e (FASA), textes en anglais |
+| Plateforme | .NET MAUI, Android uniquement ; iPhone mis de côté |
+| Distribution | APK partagé directement au groupe |
+| Personnages | Un seul en V1 |
+| Lanceur de dés | Non en V1, les dés sont lancés à la main |
+| Disciplines | Toutes, pas seulement Weaponsmith |
+| Races et talents raciaux | Inclus en V1 |
+| Table des attributs, lignes 28–30 | Conformes au livre |
+
+Reste à fournir : le chapitre **Races** du *Player's Guide*, pour le texte complet des
+capacités raciales. En attendant, elles n'ont qu'un libellé court.
 
 ## 10. Plan de réalisation
 
-1. ✅ Cahier des charges v0.2, tables Step→dés et attributs en JSON.
+1. ✅ Cahier des charges v0.3, tables Step→dés, attributs et races en JSON.
 2. **Données** : transcription de `talents.json`, `skills.json` et `disciplines.json`,
    script de validation, relecture.
 3. **Squelette** : solution .NET (Core + App + Tests), CI, chargement des données.

@@ -1,0 +1,231 @@
+{
+  "source": "K. Scott's Earthdawn 4E character creation sheet v0.3 (Racial Averages and Starting Attributes)",
+  "notes": "Ability names are short labels from the sheet; full rules text to be added from the Player's Guide Races chapter. Labels 'Strong Back', 'Increased Wound Threshold', 'Natural Armor', 'Increased Physical Defense' are descriptive placeholders.",
+  "races": [
+    {
+      "id": "dwarf",
+      "name": "Dwarf",
+      "maturity": "10",
+      "lifespan": "100",
+      "height": "4'",
+      "weight": 120,
+      "abilities": [
+        {
+          "name": "Heat Sight"
+        },
+        {
+          "name": "Strong Back",
+          "text": "+2 STR for carrying"
+        }
+      ],
+      "movement": {
+        "ground": 10
+      },
+      "karmaModifier": 4,
+      "startingAttributes": {
+        "DEX": 9,
+        "STR": 10,
+        "TOU": 12,
+        "PER": 11,
+        "WIL": 11,
+        "CHA": 10
+      }
+    },
+    {
+      "id": "elf",
+      "name": "Elf",
+      "maturity": "20s",
+      "lifespan": "300",
+      "height": "6'3\"",
+      "weight": 150,
+      "abilities": [
+        {
+          "name": "Low-Light Vision"
+        }
+      ],
+      "movement": {
+        "ground": 14
+      },
+      "karmaModifier": 4,
+      "startingAttributes": {
+        "DEX": 12,
+        "STR": 10,
+        "TOU": 8,
+        "PER": 11,
+        "WIL": 11,
+        "CHA": 11
+      }
+    },
+    {
+      "id": "human",
+      "name": "Human",
+      "maturity": "teens",
+      "lifespan": "75",
+      "height": "5'7\"",
+      "weight": 150,
+      "abilities": [
+        {
+          "name": "Versatility",
+          "talentRef": "versatility"
+        }
+      ],
+      "movement": {
+        "ground": 12
+      },
+      "karmaModifier": 5,
+      "startingAttributes": {
+        "DEX": 10,
+        "STR": 10,
+        "TOU": 10,
+        "PER": 10,
+        "WIL": 10,
+        "CHA": 10
+      }
+    },
+    {
+      "id": "obsidiman",
+      "name": "Obsidiman",
+      "maturity": "100",
+      "lifespan": "900",
+      "height": "7'3\"",
+      "weight": 900,
+      "abilities": [
+        {
+          "name": "Increased Wound Threshold",
+          "text": "+3 Wound Threshold"
+        },
+        {
+          "name": "Natural Armor",
+          "text": "+3 Physical Armor"
+        },
+        {
+          "name": "Living Armor"
+        }
+      ],
+      "movement": {
+        "ground": 10
+      },
+      "karmaModifier": 3,
+      "startingAttributes": {
+        "DEX": 8,
+        "STR": 18,
+        "TOU": 13,
+        "PER": 9,
+        "WIL": 10,
+        "CHA": 9
+      }
+    },
+    {
+      "id": "ork",
+      "name": "Ork",
+      "maturity": "teens",
+      "lifespan": "40",
+      "height": "6'3\"",
+      "weight": 225,
+      "abilities": [
+        {
+          "name": "Low-Light Vision"
+        },
+        {
+          "name": "Gahad"
+        }
+      ],
+      "movement": {
+        "ground": 12
+      },
+      "karmaModifier": 5,
+      "startingAttributes": {
+        "DEX": 10,
+        "STR": 13,
+        "TOU": 11,
+        "PER": 10,
+        "WIL": 8,
+        "CHA": 9
+      }
+    },
+    {
+      "id": "troll",
+      "name": "Troll",
+      "maturity": "teens",
+      "lifespan": "50",
+      "height": "8'6\"",
+      "weight": 500,
+      "abilities": [
+        {
+          "name": "Heat Sight"
+        }
+      ],
+      "movement": {
+        "ground": 14
+      },
+      "karmaModifier": 3,
+      "startingAttributes": {
+        "DEX": 10,
+        "STR": 14,
+        "TOU": 12,
+        "PER": 9,
+        "WIL": 11,
+        "CHA": 10
+      }
+    },
+    {
+      "id": "tskrang",
+      "name": "T'skrang",
+      "maturity": "10",
+      "lifespan": "80",
+      "height": "5'9\"",
+      "weight": 200,
+      "abilities": [
+        {
+          "name": "Tail Combat"
+        }
+      ],
+      "movement": {
+        "ground": 12
+      },
+      "karmaModifier": 4,
+      "startingAttributes": {
+        "DEX": 11,
+        "STR": 10,
+        "TOU": 11,
+        "PER": 10,
+        "WIL": 10,
+        "CHA": 11
+      }
+    },
+    {
+      "id": "windling",
+      "name": "Windling",
+      "maturity": "30",
+      "lifespan": "170",
+      "height": "18\"",
+      "weight": 13,
+      "abilities": [
+        {
+          "name": "Astral Sight",
+          "talentRef": "astral-sight"
+        },
+        {
+          "name": "Increased Physical Defense",
+          "text": "+2 Physical Defense"
+        },
+        {
+          "name": "Flight"
+        }
+      ],
+      "movement": {
+        "ground": 6,
+        "flight": 16
+      },
+      "karmaModifier": 6,
+      "startingAttributes": {
+        "DEX": 11,
+        "STR": 4,
+        "TOU": 8,
+        "PER": 11,
+        "WIL": 10,
+        "CHA": 12
+      }
+    }
+  ]
+}
